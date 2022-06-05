@@ -1,0 +1,84 @@
+
+//==================================
+//Break points for responsive desing
+//==================================
+
+/*
+INSTRUCTION OF USE 
+  When you need to use a break point nest in the selector. 
+  eg: 
+
+  .navBar {
+    ...
+    @include query(max-w-700) {
+      width: 50%
+    }
+  }
+
+*/
+
+
+//TODO - Pedro to adjust the break points as needed for design
+
+@mixin query($breakpoint) {
+
+  @if $breakpoint == max-w-265 {
+     @media (max-width: 16.56em) { @content } //265px
+  }
+
+  @if $breakpoint == max-w-325 {
+     @media (max-width: 20.31em) { @content } //325px
+  }
+
+  @if $breakpoint == max-w-355 {
+     @media (max-width: 22.18em) { @content } //355px
+  }
+
+  @if $breakpoint == max-w-400 {
+     @media (max-width: 25em) { @content } //400px
+  }
+  
+  @if $breakpoint == max-w-480 {
+     @media (max-width: 30em) { @content } //480px
+  }
+
+  @if $breakpoint == max-w-550 {
+     @media (max-width: 34.37em) { @content } //500px
+  }
+
+  @if $breakpoint == max-w-600 {
+     @media (max-width: 37.5em) { @content } //600px
+  }
+
+  @if $breakpoint == max-w-700 {
+     @media (max-width: 43.75em) { @content } //700px
+  }
+
+  @if $breakpoint == max-w-775 {
+     @media (max-width: 48.43em) { @content } //775px
+  }
+
+  @if $breakpoint == max-w-900 {
+     @media (max-width: 56.25em) { @content } //900px
+  }
+
+  @if $breakpoint == max-w-1115 {
+     @media (max-width: 70em) { @content } //1115px
+  }
+
+  @if $breakpoint == max-w-1200 {
+     @media (max-width: 75em) { @content } //1200px
+  }
+
+  @if $breakpoint == max-w-1300 {
+     @media (max-width: 81.25em) { @content } //1300px
+  }
+
+  @if $breakpoint == min-w-1800 {
+     @media (min-width: 112.5em) { @content } //1800px +
+  }
+
+  @if $breakpoint == min-h-1550 {
+     @media (min-height: 96.8em) { @content } //1550
+  }
+}

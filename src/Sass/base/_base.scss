@@ -1,0 +1,49 @@
+//Remove browsers default margin and padding
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; 
+  scrollbar-width: none;  //Remove scroll bar  
+}
+
+//Remove scroll bar for cleaner design
+::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+html { 
+  // Set up for rem use -  10px/16px = 62.5%
+  font-size: 62.5%; //  1 rem = 10px
+ 
+  //responsive design queries for REM sizes
+ @include query(max-w-1200) {
+   font-size: 56.25%  // 1rem = 9px - 9/16 = 56.25%
+ }
+
+   @include query(max-w-900) {
+     font-size: 60%  // 1 rem = 8px - 8/16 = 50%
+   }
+
+   @include query(max-w-400) {
+     font-size: 50%;
+   }
+
+   @include query(max-w-325) {
+    font-size: 45%;
+  }
+
+   @include query(min-w-1800) {
+     font-size: 75%  // 1rem = 12px - 12/16 = 75%
+ 
+   }
+ 
+}
+
+
+body {
+  //On an element, padding and border are included in the width and height, making it easier to calculate sizes
+  box-sizing: border-box;
+}
