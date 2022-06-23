@@ -1,32 +1,51 @@
-
  body {
-  //TODO - Set general font family 
   font-weight: 400;
   line-height: 1.7;
-  //TODO - Set general font color
+  font-family: $main-font;
+  color: $primary-dark-grey;
 }
 
-a {
+a, .searchIcon {
+  cursor: pointer;
   text-decoration: none;
-  //TODO - Set general color of links
-
+  color: $primary-dark-grey;
+  transition: all .3s;
 }
+
+.a--transparent, .searchIcon--transparent {
+  cursor: pointer;  
+  text-decoration: none;
+  color: $color-white;
+  transition: all .3s;
+}
+
+a:hover, .searchIcon:hover, .liTransparent:hover {
+  cursor: pointer;
+  color: $primary-green
+}
+
+.liTransparent {
+  color: $color-white;
+  transition: all .3s;
+}
+
+
 
 
 
 h1 {
   //TODO - Adjust font size with project design
-  font-size: 3.5rem;
+  font-size: 4.8rem;
 }
 
 h2 {
   //TODO - Adjust font size with project design
-  font-size: 3rem;
+  font-size: 1.8rem;
 }
 
 h3 {
   //TODO - Adjust font size with project design
-  font-size: 2rem;
+  font-size: 1.8rem;
   
 }
 
@@ -41,7 +60,13 @@ h5 {
 }
 
 p {
-  //TODO - Set Font family for p elements if different from general
-  //TODO - Adjust font size with project design
-  font-size: 1.5rem; 
+    //TODO - Adjust font size with project design
+    font-size: 1.4rem; 
 }
+
+li{
+  font-size: 1.4rem;
+  list-style: none;
+}
+
+

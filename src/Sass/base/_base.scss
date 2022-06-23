@@ -46,4 +46,10 @@ html {
 body {
   //On an element, padding and border are included in the width and height, making it easier to calculate sizes
   box-sizing: border-box;
+  
+}
+
+
+input:focus, textarea:focus, select:focus{
+  outline: none;
 }

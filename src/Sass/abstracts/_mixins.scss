@@ -1,12 +1,12 @@
 
 //==================================
-//Break points for responsive desing
+//Break points for responsive design
 //==================================
 
 /*
 INSTRUCTION OF USE 
   When you need to use a break point nest in the selector. 
-  eg: 
+  ex: 
 
   .navBar {
     ...
@@ -18,7 +18,7 @@ INSTRUCTION OF USE
 */
 
 
-//TODO - Pedro to adjust the break points as needed for design
+//TODO - Adjust the break points as needed for design
 
 @mixin query($breakpoint) {
 
@@ -56,6 +56,10 @@ INSTRUCTION OF USE
 
   @if $breakpoint == max-w-775 {
      @media (max-width: 48.43em) { @content } //775px
+  }
+
+  @if $breakpoint == max-w-850 {
+   @media (max-width: 50em) { @content } //850px   
   }
 
   @if $breakpoint == max-w-900 {

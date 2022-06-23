@@ -1,7 +1,14 @@
+//Components
+import Hero from "../Components/Hero";
+import Navbar from "../Components/Navbar";
+import SDGGoalsList from "../Components/SDGGoalsList";
+
 const HomeScreen = () => {
   return (
     <div className="homeScreen">
-      <h1>Ai For Good || Data Catalog</h1>
+      <Navbar transparent />
+      <Hero />
+      <SDGGoalsList />
     </div>
   );
 };

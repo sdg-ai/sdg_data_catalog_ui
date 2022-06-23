@@ -11,7 +11,8 @@
 @import './screens/homeScreen';
 @import './screens/browsingScreen';
 @import './screens/methodologyScreen';
-@import './screens/proposeADataSetScreen';
+@import './screens/submitDatasetScreen';
 
 //Components
-
+@import './components/navBar';
+@import './components/hero';
