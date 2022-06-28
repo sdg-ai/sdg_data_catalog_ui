@@ -1,17 +1,16 @@
 import { SDGGoalsList } from "../../utils/SDGGoalsList";
+import Title from "../Title";
 import SDGGoalCard from "./SDGGoalCard";
 
 const SDGHomeList = () => {
   return (
     <section className="SDGHomeList">
       <section className="SDGHomeList__container">
-        <section className="SDGHomeList__titleContainer">
-          <h2>Find SDG related datasets</h2>
-          <h3>
-            Description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor.
-          </h3>
-        </section>
+        <Title
+          title="Find SDG related datasets"
+          description="Description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor."
+        />
 
         <section className="SDGHomeList__goals">
           {SDGGoalsList.map((goal) => (

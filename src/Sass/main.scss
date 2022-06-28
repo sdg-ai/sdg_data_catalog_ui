@@ -14,10 +14,17 @@
 @import './screens/submitDatasetScreen';
 
 //Components
+@import './components/title';
 @import './components/navBar';
+@import './components/submitButton.scss';
+@import './components//footer';
+
+//Home
 @import './components/homeComponents/hero';
 @import './components/homeComponents/SDGHomeList';
 @import './components/homeComponents/SDGGoalCard';
 @import './components/homeComponents/dataSetsCard';
 @import './components/homeComponents/featuredDataList';
+@import './components/homeComponents/submitNewDataSet';
+
 

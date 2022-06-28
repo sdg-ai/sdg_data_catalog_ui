@@ -35,6 +35,10 @@
       font-weight: 800;
       transition: all .2s;
 
+      @include query(max-w-480){
+        font-size: 1.4rem;
+      }
+
     }
     &:hover {
       color: $primary-green;
@@ -47,6 +51,12 @@
   &__descriptionContainer {
     padding: 1rem 2rem 1rem 2rem;
     height: 30%;
+
+    & p{
+      @include query(max-w-480){
+        font-size: 1.2rem;
+      }
+    }
     
   }
 
@@ -57,7 +67,7 @@
     justify-content: center;
     align-items: center;
     background-color: $primary-light-grey;
-    height: 15%;
+    
 
     & div {
       padding: 1rem;
@@ -65,6 +75,14 @@
       & p { 
         padding: 0 1rem 0 1rem;
         font-size: 1.2rem;
+
+        @include  query(max-w-480){
+          padding: 0 0.5rem 0 0.5rem;
+          font-size: 1rem;
+        }
+
+        
+    
 
         &:first-child{
           font-weight: 600;

@@ -10,8 +10,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    flex-direction: column;    
-    // background-color: aquamarine;
+    flex-direction: column;      
     
 
       @include query(max-w-1000){
@@ -22,51 +21,8 @@
 
       @include query(max-w-850) {
         width: 95%;
-      }
-
-     
-
-     }
-
-     &__titleContainer {
-        padding: 0 0 4rem 0;
-
-        @include query(max-w-1000){
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        & h2 {
-
-          @include query(max-w-550){
-            font-size: 2.9rem;
-          }
-
-          @include query(max-w-325){
-            font-size: 2.5rem;
-          }
-        }
-
-      & h3 {
-        font-weight: 400;
-        width: 60%;
-
-        @include query(max-w-1000){
-          text-align: center;
-        }
-
-        @include query(max-w-775){
-          width: 80%;
-          text-align: center;
-        }
-        @include query(max-w-550){
-          font-size: 1.6rem;
-        }
       } 
      }
-
 
 
   &__goals {
@@ -77,7 +33,7 @@
     align-items: flex-start;
     flex-direction: column;
     height: 548px;
-    // background-color: bisque;
+   
 
     @include query(max-w-775){
       justify-content: center;

@@ -1,0 +1,19 @@
+.submitBtt { 
+  padding: 1.5rem 3rem 1.5rem 3rem;
+  background-color: $primary-green;
+  color: $color-white;
+  font-weight: 600;
+  border-radius: 34px;
+  font-size: 1.6rem;
+  transition: all .3s;
+
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 8px 4px 16px rgba(#000,.1);
+  }
+
+  &:active {
+    transform: scale(.99);
+
+  }
+}

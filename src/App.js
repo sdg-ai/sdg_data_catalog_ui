@@ -8,6 +8,7 @@ import BrowsingScreen from "./Screens/BrowsingScreen";
 import MethodologyScreen from "./Screens/MethodologyScreen";
 import SubmitDatasetScreen from "./Screens/SubmitDatasetScreen";
 import HomeScreen from "./Screens/HomeScreen";
+import Footer from "./Components/Footer";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <Route path="submit-dataset" element={<SubmitDatasetScreen />} />
         <Route index element={<HomeScreen />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 };

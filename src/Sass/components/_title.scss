@@ -1,0 +1,40 @@
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-start;
+  padding: 0 0 4rem 0;
+
+
+  @include query(max-w-1200){    
+    justify-content: center;
+    align-items: center;
+  }
+
+  & h2 {
+
+    @include query(max-w-550){
+      font-size: 2.9rem;
+    }
+
+    @include query(max-w-325){
+      font-size: 2.5rem;
+    }
+  }
+
+  & h3 {
+    font-weight: 400;
+    width: 60%;
+
+    @include query(max-w-1200){
+      text-align: center;
+      width: 80%;
+    }
+
+  
+    @include query(max-w-550){
+      font-size: 1.6rem;
+    }
+  } 
+ 
+}

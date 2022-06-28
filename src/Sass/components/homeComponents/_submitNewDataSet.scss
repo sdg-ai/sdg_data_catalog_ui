@@ -1,0 +1,37 @@
+.submitNewDataSet{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-content: center;  
+  margin: 8rem 0 8rem 0;
+
+  
+
+  &__container {
+    width: 75%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column; 
+
+    @include query(max-w-1200){
+      justify-content: center;
+      align-items: center;
+      width: 90%;
+    }
+
+  }
+
+  &__bttContainer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    @include query(max-w-1200){
+    justify-content: center;
+
+    }
+  }
+
+}
