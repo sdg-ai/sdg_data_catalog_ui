@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import CountUp from "react-countup";
+
 const Hero = () => {
   const [dataSetQuantity, setDataSetQuantity] = useState(3926);
 
@@ -10,10 +12,10 @@ const Hero = () => {
           <h1>SDG Data Catalog</h1>
         </section>
         <section className="hero__description">
-          <h2>
-            Support researchers and innovators to advance the 2030 agenda with relevant and
+          <h3>
+            Support researchers and innovators to advance the 3030 agenda with relevant and
             real-time datasets.
-          </h2>
+          </h3>
         </section>
         <section className="hero__input">
           <form>
@@ -22,9 +24,10 @@ const Hero = () => {
           </form>
         </section>
         <section className="hero__dataSets">
-          <h5>{`${dataSetQuantity.toLocaleString(undefined, {
-            maximumFractionDigits: 2,
-          })} SDG relevant datasets available`}</h5>
+          <h5>
+            <CountUp end={dataSetQuantity} duration={2.5} separator="," delay={1} />
+            {` SDG relevant datasets available`}
+          </h5>
         </section>
       </div>
     </div>

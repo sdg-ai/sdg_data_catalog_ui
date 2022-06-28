@@ -1,14 +1,16 @@
 //Components
-import Hero from "../Components/Hero";
+import Hero from "../Components/HomeComponents/Hero";
 import Navbar from "../Components/Navbar";
-import SDGGoalsList from "../Components/SDGGoalsList";
+import SDGHomeList from "../Components/HomeComponents/SDGHomeList";
+import FeaturedDataList from "../Components/HomeComponents/FeaturedDataList";
 
 const HomeScreen = () => {
   return (
     <div className="homeScreen">
       <Navbar transparent />
       <Hero />
-      <SDGGoalsList />
+      <SDGHomeList />
+      <FeaturedDataList />
     </div>
   );
 };

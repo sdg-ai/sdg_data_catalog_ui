@@ -1,0 +1,112 @@
+.dataSetCard{
+  border-radius: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 36rem;
+  height: 50rem;
+  box-shadow: 8px 3px 24px rgba(#000,.1);
+  margin: 1rem;
+  background-color: $color-white;
+
+  &__titleContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;    
+    border-bottom: 1px dotted #000;
+    height: 30%;
+    width: 90%;
+
+    
+
+    
+    & img {
+      width: 9rem;
+      height: 9rem;
+      object-fit: cover;
+      border-radius: 5px;
+      margin-right: 1.5rem;
+    }
+    
+
+    & p {
+      font-size: 1.6rem;
+      font-weight: 800;
+      transition: all .2s;
+
+    }
+    &:hover {
+      color: $primary-green;
+      cursor: pointer;
+    }
+
+  }
+
+
+  &__descriptionContainer {
+    padding: 1rem 2rem 1rem 2rem;
+    height: 30%;
+    
+  }
+
+
+  &__updatesContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary-light-grey;
+    height: 15%;
+
+    & div {
+      padding: 1rem;
+
+      & p { 
+        padding: 0 1rem 0 1rem;
+        font-size: 1.2rem;
+
+        &:first-child{
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+
+  &__tagsContainer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 1rem 1rem 3rem 1rem;
+    height: 25%;
+  }
+
+  &__tagContainer {
+    background-color: $primary-light-grey;
+    border-radius: 4px;
+    padding: .2rem .5rem;
+    margin: .5rem;
+    transition: all .3s;
+
+    & p {
+      font-size: 1rem;
+      
+
+    }
+
+    &:hover{
+      cursor: pointer;
+      background-color: rgba($primary-green, 0.2);
+      color: $primary-green;
+    }
+  }
+
+
+
+
+
+
+}

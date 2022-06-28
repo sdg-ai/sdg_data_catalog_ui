@@ -2,7 +2,7 @@
 import { Link } from "react-router-dom";
 
 //Assets
-import mainLogo from "../assets/Logos/Logo.png";
+import mainLogo from "../assets/logos/Logo.png";
 
 const Navbar = ({ transparent }) => {
   return (

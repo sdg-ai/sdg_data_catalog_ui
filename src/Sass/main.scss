@@ -15,4 +15,9 @@
 
 //Components
 @import './components/navBar';
-@import './components/hero';
+@import './components/homeComponents/hero';
+@import './components/homeComponents/SDGHomeList';
+@import './components/homeComponents/SDGGoalCard';
+@import './components/homeComponents/dataSetsCard';
+@import './components/homeComponents/featuredDataList';
+
