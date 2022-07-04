@@ -1,26 +1,40 @@
+import { Suspense, lazy } from "react";
 import "./Sass/main.scss";
 
 //Router
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 //Screens
-import BrowsingScreen from "./Screens/BrowsingScreen";
-import MethodologyScreen from "./Screens/MethodologyScreen";
-import SubmitDatasetScreen from "./Screens/SubmitDatasetScreen";
-import HomeScreen from "./Screens/HomeScreen";
-import Footer from "./Components/Footer";
+import MethodologyPage from "./Pages/MethodologyPage";
+import SubmitDatasetPage from "./Pages/SubmitDatasetPage";
+import Footer from "./Components/Nav&Footer/Footer";
+
+//HOC to solve issue with react router sending user to middle of the mage
+import ScrollToTopFix from "./HOC/ScrollToTopFix";
+import MainLoader from "./Components/MainLoader";
+
+const DataSetPage = lazy(() => import("./Pages/DataSetPage"));
+const HomePage = lazy(() => import("./Pages/HomePage"));
+const SDGCategoryPage = lazy(() => import("./Pages/SDGCategoryPage"));
 
 const App = () => {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="browsing" element={<BrowsingScreen />} />
-        <Route path="methodology" element={<MethodologyScreen />} />
-        <Route path="submit-dataset" element={<SubmitDatasetScreen />} />
-        <Route index element={<HomeScreen />} />
-      </Routes>
-      <Footer />
+      <ScrollToTopFix>
+        <Suspense fallback={<MainLoader />}>
+          <Routes>
+            <Route path="methodology" element={<MethodologyPage />} />
+            <Route path="submit-dataset" element={<SubmitDatasetPage />} />
+            <Route path="sdg/:goal" element={<SDGCategoryPage />} />
+            <Route path="dataset/:dataset" element={<DataSetPage />} />
+
+            <Route exact path="/" element={<HomePage />} />
+
+            {/* TODO - MAKE 404 page work */}
+          </Routes>
+          <Footer />
+        </Suspense>
+      </ScrollToTopFix>
     </BrowserRouter>
   );
 };

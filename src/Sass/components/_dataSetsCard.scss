@@ -1,0 +1,89 @@
+.dataSetCard{
+  border-radius: 16px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 36rem;
+  height: 50rem;
+  box-shadow: 8px 3px 24px rgba(#000,.1);
+  margin: 1rem;
+  background-color: $color-white;
+
+  &__titleContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;    
+    border-bottom: 1px dotted #000;
+    margin: 1.5rem 1.5rem;
+        
+    & img {
+      width: 9rem;
+      height: 9rem;
+      object-fit: cover;
+      border-radius: 5px;
+      margin: .5rem 1.5rem 1.5rem .5rem;
+    }
+    
+
+    & h3 {
+      font-size: 1.6rem;
+      font-weight: 800;
+      line-height: 2.4rem;
+      transition: all .2s;
+
+      @include query(max-w-480){
+        font-size: 1.4rem;
+      }
+    }
+
+    &:hover {
+      color: $primary-green;
+      cursor: pointer;
+    }
+  }
+
+
+  &__descriptionContainer {
+    margin: 0 1.5rem 3rem 2rem;
+    height: 10rem;     
+
+    @include query(max-w-480){
+      height: 12rem;
+    }
+  }
+
+
+  &__updatesContainer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: $primary-light-grey;
+    
+
+    & div {
+      padding: 1rem;
+
+      & p { 
+        padding: 0 1rem 0 1rem;
+        font-size: 1.2rem;
+
+        @include  query(max-w-480){
+          padding: 0 0.5rem 0 0.5rem;
+          font-size: 1rem;
+        }      
+
+        &:first-child{
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  &__tagsContainer{
+    width: 100%;
+    padding: 1.5rem;
+  }  
+
+}

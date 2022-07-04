@@ -1,0 +1,50 @@
+.datasetTrends {
+
+
+  &__trendContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include query(max-w-700){
+      flex-direction: column;
+
+
+    }
+
+    & section {
+      max-width: 28rem;
+      padding: 1rem 2rem 1rem 0;
+
+      @include query(max-w-700){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+        
+    }
+    
+
+
+    & h2 {
+      font-size: 9.6rem;
+      color: $primary-green;
+      font-weight: 400;
+    }
+
+    & h5 {
+      margin-bottom: 1rem;
+    }
+
+    & p {
+      font-size: 1.6rem;
+
+      @include query(max-w-700){
+        text-align: center;
+
+      }
+    }
+
+  }
+}

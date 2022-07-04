@@ -1,0 +1,58 @@
+.SDGHomeHome {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8rem 0 4rem 0;
+
+  &__container {
+    width: 75%;   
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;      
+    
+      @include query(max-w-1000){
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 80%;
+      }
+
+      @include query(max-w-850) {
+        width: 85%;
+      } 
+     }
+
+
+  &__goals {
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 548px;
+   
+
+    
+
+
+    @include query(max-w-1500) {
+      height: 750px;
+    }
+
+    @include query(max-w-1200) {
+      height: 650px;
+    }
+
+    @include query(max-w-900){
+      height: 700px;
+    }
+
+    @include query(max-w-775){
+      height: 100%;
+    }
+
+  }
+
+}

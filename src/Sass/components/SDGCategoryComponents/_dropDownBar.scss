@@ -1,0 +1,54 @@
+.dropDownBar {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $primary-grey;
+
+  
+  &__container {
+    width: 75%;
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;   
+    border-bottom: 1px dotted #000;
+
+    @include query(max-w-775){
+      width: 85%;
+    }
+  }
+
+
+  &__left {
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+    & div {
+        border: 1px solid rgba(#999,0.4);
+        padding: .5rem 2rem;
+        margin: 1rem;
+        font-size: 1.4rem;
+        color: rgba(#999,0.6);
+        border-radius: 5px;
+    }
+  }
+
+  &__right {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    & div {
+      border: 1px solid rgba(#999,0.4);
+      padding: .5rem 2rem;
+      margin: 1rem;
+      font-size: 1.4rem;
+      color: rgba(#999,0.6);
+      border-radius: 5px;
+    }
+  }
+}

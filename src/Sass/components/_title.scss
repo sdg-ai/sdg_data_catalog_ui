@@ -6,7 +6,7 @@
   padding: 0 0 4rem 0;
 
 
-  @include query(max-w-1200){    
+  @include query(max-w-1000){    
     justify-content: center;
     align-items: center;
   }
@@ -26,10 +26,13 @@
     font-weight: 400;
     width: 60%;
 
-    @include query(max-w-1200){
-      text-align: center;
+    @include query(max-w-1200){   
       width: 80%;
     }
+
+  @include query(max-w-1000){
+    text-align: center;
+  }
 
   
     @include query(max-w-550){

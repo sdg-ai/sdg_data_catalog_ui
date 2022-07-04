@@ -1,0 +1,43 @@
+.SDGGoalCard {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 360px;
+  margin-right: 2rem;
+
+  @include query(max-w-775){
+    margin-right: 0;
+  }
+
+  @include query(max-w-400){
+    width: 300px;
+  }
+
+  &__imgContainer {
+    margin: 1rem 2rem;
+    & img {
+      width: 5.4rem;
+    }
+    
+
+  }
+
+  &__textContainer {
+    line-height: 2rem;
+
+   
+    & h4 {
+      font-size: 1.4rem;
+      font-weight: 800;
+    }
+  }  
+
+  &:hover {
+    background-color: rgba($primary-green, 0.1);
+    cursor: pointer;
+    border-radius: 8px;
+    color: $primary-green;
+
+  }
+
+}

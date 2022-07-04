@@ -7,24 +7,37 @@
 @import './base/typography';
 @import './base/utilities';
 
-//Screens
-@import './screens/homeScreen';
-@import './screens/browsingScreen';
-@import './screens/methodologyScreen';
-@import './screens/submitDatasetScreen';
+//Pages
+@import './pages/homePage';
+@import './pages/browsingPage';
+@import './pages/methodologyPage';
+@import './pages/submitDatasetPage';
+@import './pages//SDGCategoryPage';
 
 //Components
 @import './components/title';
-@import './components/navBar';
-@import './components/submitButton.scss';
-@import './components//footer';
+@import './components/mainBtt';
+@import './components/dataSetCards';
+@import './components/dataSetsCard';
+@import './components/SDGGoalCard';
+@import './components/submitNewDataSetBanner';
+@import './components/tagsContainer';
+@import './components/updateTags';
+@import './components/SDGDatasetHero';
 
-//Home
-@import './components/homeComponents/hero';
-@import './components/homeComponents/SDGHomeList';
-@import './components/homeComponents/SDGGoalCard';
-@import './components/homeComponents/dataSetsCard';
-@import './components/homeComponents/featuredDataList';
-@import './components/homeComponents/submitNewDataSet';
+//Navbar and Footer
+@import './components/nav&Footer/navBar';
+@import './components/nav&Footer/footer';
 
+//Home Page Components
+@import './components/HomeComponents/homeHero';
+@import './components/HomeComponents/SDGGoalsHome';
+@import './components/HomeComponents/featuredDataSetList';
 
+//SDG Category Page Components
+@import './components/SDGCategoryComponents/dataSetCardsContainer';
+@import './components//SDGCategoryComponents/dropDownBar';
+
+//Dataset Page
+@import './components/DataSetPageComponents/similarDataset';
+@import './components/DataSetPageComponents/datasetTrends'

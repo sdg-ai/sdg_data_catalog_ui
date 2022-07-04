@@ -1,0 +1,39 @@
+.updateTags {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom:2rem ;
+
+  & div {
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 1rem 1rem 1rem 1rem; 
+    background-color: $primary-grey;
+    border-radius: 8px;
+    
+    & h5, p {
+      font-size: 1.4rem
+
+
+
+    }
+    
+    
+
+    &:nth-child(odd) {
+      margin: 1rem 1rem 1rem 0;
+    }
+    &:nth-child(even) {
+      margin: 1rem 0;
+
+      @include query(max-w-850){
+      margin: 1rem 1rem;
+
+      }
+    }
+    
+  }
+  
+}

@@ -60,3 +60,51 @@ button {
   border: none;
   cursor: pointer;
 }
+
+
+.generalSectionGrey {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $primary-grey;  
+  
+  &__container {
+    width: 75%;
+    margin: 8rem 0;
+
+    @include query(max-w-1000){
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 80%;
+    }
+
+    @include query(max-w-850) {
+      width: 85%;
+    } 
+  }
+}
+
+.generalSectionWhite {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-white;  
+  
+  &__container {
+    width: 75%;
+    margin: 8rem 0;
+
+    @include query(max-w-1000){
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 80%;
+    }
+
+    @include query(max-w-850) {
+      width: 85%;
+    } 
+  }
+}
+

@@ -1,0 +1,24 @@
+.btt { 
+  padding: 1rem 3rem 1rem 3rem;
+  background-color: $primary-green;
+  color: $color-white;
+  font-weight: 600;
+  border-radius: 34px;
+  font-size: 1.6rem;
+  transition: all .1s;
+
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 8px 4px 16px rgba(#000,.1);
+  }
+
+  &:active {
+    transform: scale(.99);
+    box-shadow: 8px 4px 8px rgba(#000,.1);
+    background-color: $primary-green-dark;
+  }
+
+  & i {
+    margin-right: .5rem;
+  }
+}
