@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Title from "./Title";
 
 const SubmitNewDataSetBanner = () => {
@@ -10,7 +11,9 @@ const SubmitNewDataSetBanner = () => {
           tempor."
         />
         <div className="submitNewDataSetBanner__bttContainer">
-          <button className="btt">Submit a dataset</button>
+          <Link to={`/submit-dataset`}>
+            <button className="btt">Submit a dataset</button>
+          </Link>
         </div>
       </div>
     </section>

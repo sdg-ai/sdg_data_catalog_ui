@@ -12,18 +12,22 @@
 @import './pages/browsingPage';
 @import './pages/methodologyPage';
 @import './pages/submitDatasetPage';
-@import './pages//SDGCategoryPage';
+@import './pages/SDGCategoryPage';
+
+
 
 //Components
 @import './components/title';
 @import './components/mainBtt';
-@import './components/dataSetCards';
+@import './components/cardsContainer';
 @import './components/dataSetsCard';
 @import './components/SDGGoalCard';
 @import './components/submitNewDataSetBanner';
 @import './components/tagsContainer';
 @import './components/updateTags';
 @import './components/SDGDatasetHero';
+@import './components/publicationsCard';
+
 
 //Navbar and Footer
 @import './components/nav&Footer/navBar';
@@ -40,4 +44,8 @@
 
 //Dataset Page
 @import './components/DataSetPageComponents/similarDataset';
-@import './components/DataSetPageComponents/datasetTrends'
+@import './components/DataSetPageComponents/datasetTrends';
+@import './components/DataSetPageComponents/relatedPublications';
+
+//Submit Dataset Page Components
+@import './components/submitPageComponents/submitDatasetForm';

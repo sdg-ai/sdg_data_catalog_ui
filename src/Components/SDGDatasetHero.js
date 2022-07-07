@@ -40,7 +40,7 @@ const SDGDatasetHero = ({ dataSetPage = false, logo, title, subTitle }) => {
                 className="btt"
                 onClick={() => window.open("https://pedrogoncal.com", "_blank")}
               >
-                <i class="fa-solid fa-link"></i> Visit Website
+                <i className="fa-solid fa-link"></i> Visit Website
               </button>
             </section>
           )}

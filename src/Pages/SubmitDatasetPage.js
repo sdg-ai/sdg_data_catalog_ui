@@ -1,9 +1,14 @@
-const ProposeADataSetPage = () => {
+import React from "react";
+import Navbar from "../Components/Nav&Footer/Navbar";
+import SubmitDatasetForm from "../Components/SubmitPageComponents/SubmitDatasetForm";
+
+const SubmitDatasetPage = () => {
   return (
     <div>
-      <h1>Ai For Good || Propose A Data Set Page</h1>
+      <Navbar />
+      <SubmitDatasetForm />
     </div>
   );
 };
 
-export default ProposeADataSetPage;
+export default SubmitDatasetPage;

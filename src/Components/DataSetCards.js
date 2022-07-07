@@ -5,9 +5,9 @@ const DataSetCards = ({ dataSets, length = 6 }) => {
   const newDatasets = dataSets.slice(0, length);
 
   return (
-    <section className="dataSetCards">
-      {newDatasets.map((dataSet) => (
-        <DataSetCard dataSet={dataSet} />
+    <section className="cardsContainer">
+      {newDatasets.map((dataSet, index) => (
+        <DataSetCard dataSet={dataSet} key={`${dataSet.title} - ${index}`} />
       ))}
     </section>
   );

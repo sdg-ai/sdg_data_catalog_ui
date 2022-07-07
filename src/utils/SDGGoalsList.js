@@ -72,7 +72,7 @@ export const SDGGoalsList = [
   {
     src: "sdg-icon-15.svg",
     title: "Goal 15",
-    goal: "Lif On Land",
+    goal: "Life On Land",
   },
   {
     src: "sdg-icon-16.svg",

@@ -22,19 +22,19 @@ const Navbar = ({ transparent }) => {
             <li className={`${transparent && "liTransparent"}`}>Methodology</li>
           </ul>
         </Link>
-        <Link to="/">
+        <Link to="/submit-dataset">
           <ul>
             <li className={`${transparent && "liTransparent"}`}>Submit a dataset</li>
           </ul>
         </Link>
         <i
-          class={`fa-solid fa-magnifying-glass navBar__searchIcon searchIcon ${
+          className={`fa-solid fa-magnifying-glass navBar__searchIcon searchIcon ${
             transparent && "searchIcon--transparent"
           }`}
         ></i>
       </section>
       <section className="navBar__menu">
-        <i class="fa-solid fa-bars"></i>
+        <i className="fa-solid fa-bars"></i>
       </section>
     </nav>
   );

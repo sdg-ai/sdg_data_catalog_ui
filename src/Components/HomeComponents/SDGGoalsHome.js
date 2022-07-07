@@ -13,8 +13,8 @@ const SDGGoalsHome = () => {
         />
 
         <section className="SDGHomeHome__goals">
-          {SDGGoalsList.map((goal) => (
-            <SDGGoalCard goal={goal} />
+          {SDGGoalsList.map((goal, index) => (
+            <SDGGoalCard goal={goal} key={`${goal.title} - ${index}`} />
           ))}
         </section>
       </section>

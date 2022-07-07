@@ -1,0 +1,61 @@
+.publicationsCard {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  background-color: $color-white;
+  border-radius: 16px;
+  box-shadow: 8px 3px 24px rgba(#000,.1);
+  margin: 1rem;
+  padding: 2rem;
+  width: 36rem;
+  min-height: 32rem;
+  
+  &__titleContainer {
+    width: 100%;   
+    min-height: 8rem;
+  }
+  
+  
+  &__descriptionContainer {  
+    min-height: 13rem;
+  }
+  
+  &__authorsContainer{
+    width: 100%;  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    color: rgba($primary-dark-grey, .6);
+    padding: 1rem 0;
+    height: 6rem;   
+    
+    & p {
+      font-size: 1.2rem;
+      // margin-right: .2rem;
+    }
+    
+  }
+  
+  
+  &__linkContainer {
+   
+    
+    width: 100%;
+    border-top: 1px dotted #000;
+    // margin: 1.5rem 1.5rem;
+    padding: 1.5rem 0;
+    min-height: 4rem;
+    
+    & a {
+      color: $primary-green;
+      font-weight: 700;
+
+      &:hover {
+        color: $primary-green-dark;
+      }
+    }
+
+  }
+
+}

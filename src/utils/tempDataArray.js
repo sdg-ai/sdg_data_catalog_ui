@@ -155,3 +155,36 @@ export const dataSets = [
     ],
   },
 ];
+
+export const publications = [
+  {
+    title: "Publication Title Lorem ipsum dolor sit amet, consectet adipiscing elit",
+    description:
+      "Publication Excerpt Detailed statistics on renewable energy capacity, power generation and renewable energy balances. Lorem ipsum dolor sit amet, consectet adipiscing elit sed max 190 chars lorem ipsum roman stuff and things.",
+    authors: "John Doe, Pedro Goncalves",
+
+    link: "https://www.ai4good.org",
+  },
+  {
+    title: "Publication Title Lorem ",
+    description:
+      "Publication Excerpt Detailed statistics on renewable energy capacity, power generation and renewable energy balances. Lorem ipsum dolor sit amet, consectet adipiscing elit sed max 190 chars lorem ipsum roman stuff and things.",
+    authors: "John Doe, Pedro Goncalves, Lorenzo Ipsomo, Sara Sample, Maximilian Longname Rodrigez",
+
+    link: "https://www.ai4good.org",
+  },
+  {
+    title: "Publication Title Lorem ipsum dolor sit amet, consectet adipiscing elit",
+    description: "Publication Excerpt Detailed statistics on renewable energy capacity.",
+    authors: "John Doe, Pedro Goncalves, Lorenzo Ipsomo, Sara Sample, Maximilian Longname Rodrigez",
+    link: "https://www.ai4good.org",
+  },
+  {
+    title: "Publication Title Lorem ipsum dolor sit amet, consectet adipiscing elit",
+    description:
+      "Publication Excerpt Detailed statistics on renewable energy capacity, power generation and renewable energy balances. Lorem ipsum dolor sit amet, consectet adipiscing elit sed max 190 chars lorem ipsum roman stuff and things.",
+    authors: "John Doe, Pedro Goncalves, Lorenzo Ipsomo, Sara Sample, Maximilian Longname Rodrigez",
+
+    link: "https://www.ai4good.org",
+  },
+];

@@ -1,10 +1,16 @@
 import React from "react";
 
-const TagsContainer = ({ tags }) => {
+const TagsContainer = ({ tags, handleSuggestedKeywordPress, form }) => {
   return (
     <section className="tagsContainer">
       {tags.map((tag, index) => (
-        <div className="tagsContainer__tag" key={`${tag.title}-${index}`}>
+        <div
+          onClick={() => {
+            form && handleSuggestedKeywordPress(tag);
+          }}
+          className="tagsContainer__tag"
+          key={`${tag}-${index}`}
+        >
           <p>{tag}</p>
         </div>
       ))}

@@ -6,13 +6,13 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 //Screens
 import MethodologyPage from "./Pages/MethodologyPage";
-import SubmitDatasetPage from "./Pages/SubmitDatasetPage";
 import Footer from "./Components/Nav&Footer/Footer";
 
 //HOC to solve issue with react router sending user to middle of the mage
 import ScrollToTopFix from "./HOC/ScrollToTopFix";
 import MainLoader from "./Components/MainLoader";
 
+const SubmitDatasetPage = lazy(() => import("./Pages/SubmitDatasetPage"));
 const DataSetPage = lazy(() => import("./Pages/DataSetPage"));
 const HomePage = lazy(() => import("./Pages/HomePage"));
 const SDGCategoryPage = lazy(() => import("./Pages/SDGCategoryPage"));

@@ -1,0 +1,191 @@
+.submitDatasetForm {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & h5 {
+    margin: 1rem 0;
+
+  }
+
+
+  &__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__titleContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+
+    & h1 {
+      @include query(max-w-550) {
+        font-size: 3rem;
+      }
+    }
+
+    & p {
+      text-align: center;
+    }
+  }
+
+  &__form {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include query(max-w-1000){
+      width: 60%;
+    }
+
+    @include query(max-w-775){
+      width: 80%;
+    }
+
+    & section {
+      width: 100%;
+      padding: 1rem 0;
+    }
+
+ 
+  }
+
+  &__personalDetails{
+    border-top: 1px dotted rgba($color-black, 0.6);
+      margin: 1rem 0;
+
+  
+  }
+
+
+  &__datasetDetails {
+    border-top: 1px dotted rgba($color-black, 0.6);
+      margin: 1rem 0;
+  
+
+    & i {
+      padding: 0rem 1rem 0 1rem;
+      font-size: 2rem;
+      color: rgba($color: $color-black, $alpha: .6);
+
+      @include query(max-w-480){
+      display: none;
+      }
+    }
+
+    &--horizontal {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+     
+      @include query(max-w-480){
+        flex-direction: column;
+
+
+      }
+
+    }
+
+  }
+  
+  
+  & input {
+    margin: 1rem 0;
+  }
+
+
+
+  &__SDGGoals {
+    border-top: 1px dotted rgba($color-black, 0.6);
+    margin: 1rem 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+    &--title{
+      font-weight: 700;
+      font-size: 1.6rem;
+      padding: 1rem 0;
+    }
+        
+  }
+
+
+  &__checkboxContainer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 55rem;
+    padding-top:  2rem ;
+
+    @include query(max-w-700) {
+      height: 100%;
+    }
+
+    & p {
+      padding-left: 3.5rem;
+      font-weight: 1.4rem;
+      font-weight: 400;
+      line-height: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+  }
+
+  &__optionalFields {
+    border-top: 1px dotted rgba($color-black, 0.6);
+    margin: 1rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+   
+   
+    & textarea {
+      margin: 1rem 0;
+    }
+
+  }
+
+
+  &__requiredFields {
+    border-top: 1px dotted rgba($color-black, 0.6);
+    margin: 1rem 0;
+
+    & p {
+      font-size: 1.6rem;
+      margin: 1rem 0;
+      color: rgba($primary-dark-grey, .6);
+    }
+  }
+
+  &__bttContainer {
+    margin-bottom: 10rem;
+  }
+
+}
+
+
+
+
+
+
