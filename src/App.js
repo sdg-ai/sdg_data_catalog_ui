@@ -16,6 +16,7 @@ const SubmitDatasetPage = lazy(() => import("./Pages/SubmitDatasetPage"));
 const DataSetPage = lazy(() => import("./Pages/DataSetPage"));
 const HomePage = lazy(() => import("./Pages/HomePage"));
 const SDGCategoryPage = lazy(() => import("./Pages/SDGCategoryPage"));
+const SearchResultsPage = lazy(() => import("./Pages/SearchResultsPage"));
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
             <Route path="submit-dataset" element={<SubmitDatasetPage />} />
             <Route path="sdg/:goal" element={<SDGCategoryPage />} />
             <Route path="dataset/:dataset" element={<DataSetPage />} />
+            <Route path="search-results" element={<SearchResultsPage />} />
 
             <Route exact path="/" element={<HomePage />} />
 

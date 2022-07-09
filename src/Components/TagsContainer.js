@@ -1,5 +1,3 @@
-import React from "react";
-
 const TagsContainer = ({ tags, handleSuggestedKeywordPress, form }) => {
   return (
     <section className="tagsContainer">

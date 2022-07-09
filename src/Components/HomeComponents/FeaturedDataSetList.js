@@ -1,7 +1,9 @@
-//Temp assets
-import { dataSets } from "../../utils/tempDataArray";
+//Components
 import DataSetCards from "../DataSetCards";
 import Title from "../Title";
+
+//TEMPORARY DATA
+import { dataSets } from "../../utils/tempDataArray";
 
 const FeaturedDataSetList = () => {
   return (

@@ -1,4 +1,4 @@
-//react router
+//React router
 import { useParams } from "react-router-dom";
 
 //Components
@@ -8,6 +8,7 @@ import DropDownBar from "../Components/SDGCategoryPageComponents/DropDownBar";
 import SDGDatasetHero from "../Components/SDGDatasetHero";
 import DataSetCardsContainer from "../Components/SDGCategoryPageComponents/DataSetCardsContainer";
 
+//TEMPORARY DATA
 import tempLogo from "../assets/logos/sdg-icon-01.svg";
 
 const SDGCategoryScreen = () => {

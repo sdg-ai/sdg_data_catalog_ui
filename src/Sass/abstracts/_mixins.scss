@@ -17,6 +17,44 @@ INSTRUCTION OF USE
 
 */
 
+@mixin flexCenter {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   }
+
+ @mixin flexStart {
+   display: flex;
+   justify-content: flex-start;
+   align-items: flex-start;
+ }
+
+ @mixin flexStartCenter {
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+ }
+
+ @mixin flexEndCenter {
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+ }
+
+ @mixin flexBetweenCenter {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+
+ @mixin flexCenterEnd {
+   display: flex;
+   justify-content: center;
+   align-items: flex-end;
+
+ }
+   
+
 
 //TODO - Adjust the break points as needed for design
 
@@ -93,3 +131,5 @@ INSTRUCTION OF USE
      @media (min-height: 96.8em) { @content } //1550
   }
 }
+
+

@@ -1,5 +1,8 @@
-import { dataSets } from "../../utils/tempDataArray";
+//Components
 import DataSetCards from "../DataSetCards";
+
+//TEMPORARY DATA
+import { dataSets } from "../../utils/tempDataArray";
 
 const DataSetCardsContainer = () => {
   return (

@@ -5,7 +5,7 @@
   align-items: center;
   padding: 2rem;
   background-color: $color-white;
-  border-bottom: 1px dotted $primary-dark-grey                ;
+  border-bottom: 1px dotted $primary-dark-grey;
 
   &--transparent{
     background: none;
@@ -18,12 +18,10 @@
   
   
   &__titleContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexCenter;
     margin-left: 10%;
 
-    @include query(max-w-700){
+    @include query(max-w-1000){
       margin-left: 5%;
     }
     @include query(max-w-850){
@@ -55,12 +53,10 @@
   }
 
   &__menuContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexCenter;
     margin-right: 15%;
 
-    @include query(max-w-700){
+    @include query(max-w-850){
       margin-right: 5%;
     }
 

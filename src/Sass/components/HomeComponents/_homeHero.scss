@@ -9,17 +9,17 @@
   ),
   url('../../../assets/backgrounds/Hero-background.jpg');
   background-size: cover;
-   background-position: center; /*It makes sure, when resizing, the top of the picture stays*/
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-position: center; /*It makes sure, when resizing, the top of the picture stays*/
+  @include flexCenter;
   flex-direction: column;
-  color: white;
+  color: $color-white;
+
+  @include query(max-w-550){
+    height: 95vh
+  }
 
   &__container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexCenter;
     flex-direction: column;
     width: 40%;
 
@@ -90,9 +90,7 @@
    
 
     & form {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flexCenter;
       
       
     }
@@ -120,11 +118,18 @@
 
     
   }
+}
 
-  &__datasets{
+.downIcon {
+  visibility:hidden;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  color: $primary-green;
+  font-size: 3rem;
+  transform: translateX(-50%);
 
-
-
+  @include query (max-w-550){
+    visibility: visible;
   }
-
 }

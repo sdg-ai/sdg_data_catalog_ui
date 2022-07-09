@@ -1,12 +1,13 @@
-import React from "react";
+//Components
 import Navbar from "../Components/Nav&Footer/Navbar";
 import SDGDatasetHero from "../Components/SDGDatasetHero";
-
-import tempLogo from "../assets/tempPhotos/tempDataSetImage1.jpg";
 import SubmitNewDataSetBanner from "../Components/SubmitNewDataSetBanner";
 import SimilarDataSets from "../Components/DataSetPageComponents/SimilarDataSets";
 import DatasetTrends from "../Components/DataSetPageComponents/DatasetTrends";
 import RelatedPublications from "../Components/DataSetPageComponents/RelatedPublications";
+
+//TEMPORARY DATA
+import tempLogo from "../assets/tempPhotos/tempDataSetImage1.jpg";
 
 const DataSetPage = () => {
   return (

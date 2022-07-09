@@ -1,5 +1,7 @@
-import React from "react";
+//React router
 import { Link } from "react-router-dom";
+
+//Components
 import Navbar from "../Components/Nav&Footer/Navbar";
 
 const FourOfour = () => {

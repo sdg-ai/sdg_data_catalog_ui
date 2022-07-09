@@ -11,9 +11,7 @@
   &__container{
     width: 75%; 
     // height: 70%;  
-    display: flex;
-    justify-content: center;
-    align-items: flex-end; 
+    @include flexCenterEnd;
 
     @include query(min-w-1800){
       padding-top: 5rem;
@@ -105,8 +103,8 @@
     height: 100%;
     width: 40%;
     display: flex;
-    flex-direction: column;
     justify-content: flex-end;
+    flex-direction: column;
 
     @include query(max-w-900){
       padding-left: 3rem;  

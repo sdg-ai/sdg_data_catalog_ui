@@ -1,0 +1,25 @@
+.submitConfirmation {
+  @include flexCenter;
+  height: 75vh;
+
+  &__container {
+  @include flexCenter;
+  flex-direction: column;
+  }
+
+  & h1 {
+    margin: 2rem 0;
+
+    @include query(max-w-700){
+      font-size: 3.8rem;
+    }
+
+    @include query(max-w-480){
+      font-size: 3rem;
+    }
+  }
+
+  & button {
+    margin: 4rem 0;
+  }
+}

@@ -1,6 +1,9 @@
-import { publications } from "../../utils/tempDataArray";
+//Components
 import PublicationsCards from "../PublicationsCards";
 import Title from "../Title";
+
+//TEMPORARY DATA
+import { publications } from "../../utils/tempDataArray";
 
 const RelatedPublications = () => {
   return (

@@ -1,20 +1,14 @@
 .SDGHomeHome {
   width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flexCenter;
   margin: 8rem 0 4rem 0;
 
   &__container {
     width: 75%;   
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    @include flexStart;
     flex-direction: column;      
     
-      @include query(max-w-1000){
-        justify-content: flex-start;
-        align-items: flex-start;
+      @include query(max-w-1000){      
         width: 80%;
       }
 
@@ -26,11 +20,9 @@
 
   &__goals {
     width: 100%;
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    @include flexStart;
     flex-direction: column;
+    flex-wrap: wrap;
     height: 548px;
    
 

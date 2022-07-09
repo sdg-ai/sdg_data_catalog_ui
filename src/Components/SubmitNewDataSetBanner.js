@@ -1,4 +1,7 @@
+//React router
 import { Link } from "react-router-dom";
+
+//Components
 import Title from "./Title";
 
 const SubmitNewDataSetBanner = () => {

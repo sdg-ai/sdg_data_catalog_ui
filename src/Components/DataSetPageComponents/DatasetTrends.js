@@ -1,4 +1,4 @@
-import React from "react";
+//Components
 import Title from "../Title";
 
 const DatasetTrends = () => {

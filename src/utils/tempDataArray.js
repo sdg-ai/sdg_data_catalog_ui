@@ -188,3 +188,36 @@ export const publications = [
     link: "https://www.ai4good.org",
   },
 ];
+
+export const tempResults = [
+  {
+    imageURL: "tempDataSetImage1.jpg",
+    title: "Figshare – River Plastic Emissions to the World’s Oceans ",
+    subTitle: "",
+    id: "1561516",
+  },
+  {
+    imageURL: "tempDataSetImage2.jpg",
+    title: "Dataset Long Title Irena Renewable Energy Statistics Lorem Ipsum dolor si ",
+    subTitle: "",
+    id: "94819",
+  },
+  {
+    imageURL: "tempDataSetImage3.jpg",
+    title: "Dataset Title Lorem Ipsum ",
+    subTitle: "",
+    id: "948119",
+  },
+  {
+    imageURL: "tempDataSetImage4.svg",
+    title: "Goal 1",
+    subTitle: "Clean Water & Sanitation",
+    id: "156119",
+  },
+  {
+    imageURL: "tempDataSetImage5.svg",
+    title: "Goal 14",
+    subTitle: "Life Below Water",
+    id: "81819",
+  },
+];

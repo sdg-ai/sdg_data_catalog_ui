@@ -1,8 +1,6 @@
 
 .tagsContainer{
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+  @include flexStart;
     flex-wrap: wrap;   
     width: 100%;   
 

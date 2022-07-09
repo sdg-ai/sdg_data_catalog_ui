@@ -1,6 +1,9 @@
-import { SDGGoalsList } from "../../utils/SDGGoalsList";
+//Components
 import Title from "../Title";
 import SDGGoalCard from "./SDGGoalCard";
+
+//Goals List
+import { SDGGoalsList } from "../../utils/SDGGoalsList";
 
 const SDGGoalsHome = () => {
   return (

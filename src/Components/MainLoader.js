@@ -1,3 +1,4 @@
+//React spinner
 import CircleLoader from "react-spinners/CircleLoader";
 
 const MainLoader = () => {

@@ -1,30 +1,41 @@
 .submitDatasetForm {
   width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flexCenter;
 
-  & h5 {
+  & textarea {
+    width: 100%;
+    margin: 1rem 0;    
+  }
+
+  & input {
     margin: 1rem 0;
+  }
 
+  &__containerSeparator {
+    border-top: 1px dotted rgba($color-black, 0.6);
+    margin: 1rem 0;
   }
 
 
   &__container {
-    width: 100%;
-    display: flex;
+    width: 40%;
+    @include flexCenter;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+    @include query(max-w-1000){
+      width: 60%;
+    }
+
+    @include query(max-w-775){
+      width: 80%;
+    }
   }
 
   &__titleContainer {
     width: 100%;
-    display: flex;
+    @include flexCenter;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 5rem;
+    padding: 5rem 0;
 
     & h1 {
       @include query(max-w-550) {
@@ -38,39 +49,25 @@
   }
 
   &__form {
-    width: 40%;
-    display: flex;
+    width: 100%;
+    @include flexCenter;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    @include query(max-w-1000){
-      width: 60%;
-    }
-
-    @include query(max-w-775){
-      width: 80%;
-    }
 
     & section {
       width: 100%;
       padding: 1rem 0;
     }
-
- 
   }
 
   &__personalDetails{
     border-top: 1px dotted rgba($color-black, 0.6);
-      margin: 1rem 0;
-
-  
+    margin: 1rem 0;  
   }
 
 
   &__datasetDetails {
     border-top: 1px dotted rgba($color-black, 0.6);
-      margin: 1rem 0;
+    margin: 1rem 0;
   
 
     & i {
@@ -85,50 +82,30 @@
 
     &--horizontal {
       width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-
+      @include flexBetweenCenter;
      
       @include query(max-w-480){
         flex-direction: column;
-
-
       }
 
     }
 
   }
   
-  
-  & input {
-    margin: 1rem 0;
-  }
-
-
-
   &__SDGGoals {
-    border-top: 1px dotted rgba($color-black, 0.6);
-    margin: 1rem 0;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    @include flexStart;
     flex-direction: column;
     flex-wrap: wrap;
     
     &--title{
       font-weight: 700;
-      font-size: 1.6rem;
-      padding: 1rem 0;
+      font-size: 1.6rem;    
     }
-        
   }
 
 
   &__checkboxContainer{
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    @include flexStart;
     flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
@@ -146,30 +123,39 @@
       line-height: 2rem;
       margin-bottom: 1.5rem;
     }
-
   }
 
-  &__optionalFields {
-    border-top: 1px dotted rgba($color-black, 0.6);
-    margin: 1rem 0;
+  &__keywords {
     width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    @include flexStart;
+    flex-direction: column;
+  }
 
-   
-   
-    & textarea {
-      margin: 1rem 0;
+
+  &__additionalInfo{
+    width: 100%;
+    @include flexStart;
+    flex-wrap: wrap;
+  }
+
+  &__optionalTitle {
+    @include flexCenter;
+    transition: all .2s;
+
+    & i {
+      color: $primary-green;
+      font-size: 2rem;
+      padding-right: 1rem;
     }
 
+    &:hover {
+      cursor: pointer;
+      color: $primary-green;
+    }
   }
 
 
-  &__requiredFields {
-    border-top: 1px dotted rgba($color-black, 0.6);
-    margin: 1rem 0;
+  &__requiredFields {    
 
     & p {
       font-size: 1.6rem;
@@ -181,11 +167,4 @@
   &__bttContainer {
     margin-bottom: 10rem;
   }
-
 }
-
-
-
-
-
-

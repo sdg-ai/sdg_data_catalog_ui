@@ -1,0 +1,89 @@
+
+.resultsBar {
+  position: absolute;
+  top: 1;
+  left: 1;
+  margin-top: 1rem;
+  width: 40%;
+
+  @include query(max-w-1300){
+    width: 55%;
+  }
+
+  @include query(max-w-900){
+    width: 65%;
+  }
+
+  @include query(max-w-775){
+    width: 75%
+  }
+
+  @include query(max-w-600){
+    width: 85%;
+  }
+
+  @include query(max-w-325){
+    width: 90%;
+  }
+  
+  // height: 100%;
+  border-radius: 8px;
+  background-color: $color-white;
+  z-index: 100;
+  border: 1px solid #dddddd;
+  
+  &__container {
+    @include flexStart;
+    flex-direction: column;
+    margin: 0 2rem;    
+    
+    & section {
+      width: 100%;
+      @include flexStartCenter;
+      padding: 2rem 0;
+      color: #000;
+      border-bottom: 2px dotted rgba(#ddd, $alpha: 1.0);
+      
+      & div {
+        transition: all .2s;
+        
+        &:hover {
+          color: $primary-green;
+          cursor: pointer;
+        }
+
+        & h5, p {
+          font-size: 1.4rem
+        }
+      }      
+    }
+
+    & img {
+      width: 5rem;
+      height: 5rem;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-right: 2rem;
+    }
+  }
+
+
+  &__footer {
+    color: $primary-green;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+
+    & p {      
+      transition: all .2s;
+      &:hover {
+        cursor: pointer;
+        color: $primary-green-dark;
+      }
+    }    
+  }
+}
+
+

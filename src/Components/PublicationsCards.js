@@ -1,4 +1,4 @@
-import React from "react";
+//Components
 import PublicationsCard from "./PublicationsCard";
 
 const PublicationsCards = ({ publications, length = 3 }) => {

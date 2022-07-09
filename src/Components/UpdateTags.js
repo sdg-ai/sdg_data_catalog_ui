@@ -1,5 +1,3 @@
-import React from "react";
-
 const UpdateTags = () => {
   return (
     <section className="updateTags">

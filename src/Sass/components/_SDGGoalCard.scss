@@ -1,7 +1,5 @@
 .SDGGoalCard {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  @include flexStartCenter;
   width: 360px;
   margin-right: 2rem;
 

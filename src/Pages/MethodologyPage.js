@@ -1,4 +1,4 @@
-import React from "react";
+//Components
 import Navbar from "../Components/Nav&Footer/Navbar";
 
 const MethodologyPage = () => {

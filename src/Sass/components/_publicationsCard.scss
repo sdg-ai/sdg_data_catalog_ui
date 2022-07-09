@@ -1,7 +1,5 @@
 .publicationsCard {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+  @include flexStart;
   flex-direction: column;
   background-color: $color-white;
   border-radius: 16px;
@@ -23,9 +21,8 @@
   
   &__authorsContainer{
     width: 100%;  
-    display: flex;
+    @include flexStart;
     flex-wrap: wrap;
-    justify-content: flex-start;
     color: rgba($primary-dark-grey, .6);
     padding: 1rem 0;
     height: 6rem;   

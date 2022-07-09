@@ -1,8 +1,6 @@
 .title {
-  display: flex;
+  @include flexStart;
   flex-direction: column;
-  justify-content: flex-start;
-  align-content: flex-start;
   padding: 0 0 4rem 0;
 
 

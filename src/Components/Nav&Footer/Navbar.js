@@ -1,10 +1,17 @@
+import { useState } from "react";
+
 //Router
 import { Link } from "react-router-dom";
 
 //Assets
 import mainLogo from "../../assets/logos/Logo.png";
 
+//Components
+import SearchBar from "../SearchBar";
+
 const Navbar = ({ transparent }) => {
+  const [searchEnabled, setSearchEnabled] = useState(false);
+
   return (
     <nav className={`navBar ${transparent && "navBar--transparent"}`}>
       <section className="navBar__titleContainer">
@@ -22,12 +29,15 @@ const Navbar = ({ transparent }) => {
             <li className={`${transparent && "liTransparent"}`}>Methodology</li>
           </ul>
         </Link>
+
         <Link to="/submit-dataset">
           <ul>
             <li className={`${transparent && "liTransparent"}`}>Submit a dataset</li>
           </ul>
         </Link>
+
         <i
+          onClick={() => setSearchEnabled(!searchEnabled)}
           className={`fa-solid fa-magnifying-glass navBar__searchIcon searchIcon ${
             transparent && "searchIcon--transparent"
           }`}
@@ -36,6 +46,7 @@ const Navbar = ({ transparent }) => {
       <section className="navBar__menu">
         <i className="fa-solid fa-bars"></i>
       </section>
+      {searchEnabled && <SearchBar transparent={transparent} />}
     </nav>
   );
 };

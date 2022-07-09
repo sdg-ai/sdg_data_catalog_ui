@@ -1,7 +1,5 @@
 .dataSetCard{
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+  @include flexStart;
   flex-direction: column;
   border-radius: 16px;
   width: 36rem;
@@ -11,9 +9,7 @@
   background-color: $color-white;
 
   &__titleContainer {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;    
+    @include flexStart;   
     border-bottom: 1px dotted #000;
     margin: 1.5rem 1.5rem;
         
@@ -56,9 +52,7 @@
 
   &__updatesContainer {
     width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    @include flexStartCenter;
     background-color: $primary-light-grey;
     
 

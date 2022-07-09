@@ -1,5 +1,7 @@
-import TagsContainer from "./TagsContainer";
 import { Link } from "react-router-dom";
+
+//Components
+import TagsContainer from "./TagsContainer";
 
 const DataSetCard = ({ dataSet }) => {
   dataSet.id = "161561";

@@ -123,9 +123,7 @@ button {
   &::placeholder {
     color: rgba($primary-dark-grey, 0.75);
     font-size: 1.6rem;
-    font-weight: 300;
-    
- 
+    font-weight: 300; 
   } 
 
   &:focus {
@@ -139,6 +137,9 @@ button {
   &:disabled {
     opacity: .2;
   }
+
+  
+
 }
 
 
@@ -158,13 +159,12 @@ select {
   line-height: inherit;
   z-index: 1;
   color: rgba($primary-dark-grey, 0.75);
-  
+  outline: none;
 
   &::-ms-expand {
     display: none;
   }
 
-  outline: none;
 }
 
 .select {
@@ -350,5 +350,6 @@ textarea {
     opacity: .2;
   }
 }
+
 
 
