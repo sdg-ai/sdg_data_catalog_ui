@@ -1,0 +1,84 @@
+.pagination-container {
+  display: flex;
+  list-style-type: none;
+  //Removes the ability for the user to select the text inside the 
+  //pagination for a better UX
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+
+
+  .pagination-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: $green;
+    height: 3.6rem;
+    width: 3.6rem;
+    border-radius: 50%;
+    padding: 0 1rem;
+    margin: auto 0.4rem;
+    letter-spacing: 0.01071em;
+    line-height: 1.43;
+    font-size: 1.7rem;
+
+
+    &.dots:hover {
+      background-color: transparent;
+      cursor: default;
+    }
+    &:hover {
+      background-color: rgba($green, 0.2);
+      cursor: pointer;
+    }
+
+    &.selected {
+      background-color: rgba($green, .9);
+      color: white;
+    }
+
+    .arrow {
+      &::before {
+        position: relative;
+        /* top: 3pt; Uncomment this to lower the icons as requested in comments*/
+        content: '';
+        /* By using an em scale, the arrows will size with the font */
+        display: inline-block;
+        width: 0.4em;
+        height: 0.4em;
+        border-right: 0.12em solid rgba($green, 0.87);
+        border-top: 0.12em solid rgba($green, 0.87);
+      }
+
+      &.left {
+        transform: rotate(-135deg) translate(-50%);
+      }
+
+      &.right {
+        transform: rotate(45deg);
+      }
+    }
+
+    &.disabled {
+      pointer-events: none;
+
+      .arrow::before {
+        border-right: 0.12em solid rgba(0, 0, 0, 0.43);
+        border-top: 0.12em solid rgba(0, 0, 0, 0.43);
+      }
+
+      &:hover {
+        background-color: transparent;
+        cursor: default;
+      }
+    }
+  }
+}
+
+.paginationBar {
+  padding: 2rem 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}

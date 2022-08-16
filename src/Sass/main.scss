@@ -1,6 +1,8 @@
 @import './abstracts/functions';
 @import './abstracts/mixins';
 @import './abstracts/variables';
+@import './abstracts/placeHolders';
+
 
 @import './base/_base';
 @import './base/animations';
@@ -19,37 +21,50 @@
 //Components
 @import './components/title';
 @import './components/mainBtt';
-@import './components/cardsContainer';
 @import './components/dataSetsCard';
-@import './components/SDGGoalCard';
 @import './components/submitNewDataSetBanner';
 @import './components/tagsContainer';
 @import './components/updateTags';
 @import './components/SDGDatasetHero';
-@import './components/publicationsCard';
 @import './components/resultsBar';
 @import './components/searchBar';
 @import './components/submitConfirmation';
-
+@import './components/pagination';
+@import './components/dataSetCardsContainer';
 
 
 //Navbar and Footer
-@import './components/nav&Footer/navBar';
-@import './components/nav&Footer/footer';
+@import './components/NavFooter/navBar';
+@import './components/NavFooter/footer';
+@import './components/NavFooter/burgerMenu';
+
 
 //Home Page Components
 @import './components/HomeComponents/homeHero';
-@import './components/HomeComponents/SDGGoalsHome';
-@import './components/HomeComponents/featuredDataSetList';
+@import './components/HomeComponents/SDGGoalsContainer';
+@import './components/HomeComponents/featuredDataSetsContainer';
+@import './components/HomeComponents/SDGGoalCard';
+
 
 //SDG Category Page Components
-@import './components/SDGCategoryComponents/dataSetCardsContainer';
-@import './components//SDGCategoryComponents/dropDownBar';
+@import './components//SDGCategoryComponents/dropDownFiltersContainer';
+@import './components//SDGCategoryComponents/SDGDataSetsContainer';
+
+
 
 //Dataset Page
-@import './components/DataSetPageComponents/similarDataset';
-@import './components/DataSetPageComponents/datasetTrends';
-@import './components/DataSetPageComponents/relatedPublications';
+@import './components/DataSetPageComponents/datasetTrendsContainer';
+@import './components/DataSetPageComponents/relatedPublicationsContainer';
+@import './components/DataSetPageComponents/similarDatasetContainer';
+@import './components/DataSetPageComponents/publicationsCardsContainer';
+@import './components/DataSetPageComponents/publicationsCard';
+
 
 //Submit Dataset Page Components
 @import './components/submitPageComponents/submitDatasetForm';
+
+
+@import './components/SearchResultsComponents/searchResultsContainer';
+
+
+

@@ -5,17 +5,17 @@ const AdditionalInfoForm = ({ values, handleInputChange }) => {
         className="mainInputText"
         type="text"
         placeholder="Owner / License"
-        value={values.license}
+        value={values.owner}
         onChange={handleInputChange}
-        name="license"
+        name="owner"
       />
       <input
         className="mainInputText"
         type="text"
         placeholder="Dataset DOI"
-        value={values.DOI}
+        value={values.doi}
         onChange={handleInputChange}
-        name="DOI"
+        name="doi"
       />
       <textarea
         type="text"

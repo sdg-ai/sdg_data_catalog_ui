@@ -31,14 +31,8 @@ html {
      font-size: 50%;
    }
 
-   @include query(max-w-325) {
-    font-size: 50%;
-  }
 
-   @include query(min-w-1800) {
-     font-size: 75%  // 1rem = 12px - 12/16 = 75%
- 
-   }
+
  
 }
 
@@ -64,10 +58,8 @@ button {
 
 .generalSectionGrey {
   width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: $primary-grey;  
+  @extend %flexCenter;
+  background-color: $grey;  
   
   &__container {
     width: 75%;
@@ -87,10 +79,8 @@ button {
 
 .generalSectionWhite {
   width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: $color-white;  
+  @extend %flexCenter;
+  background-color: $white;  
   
   &__container {
     width: 75%;
@@ -113,42 +103,31 @@ button {
   height: 5.6rem;
   padding: 1rem;
   border: 1px solid #dddddd;
-  border-radius: 8px;
-  background-color: rgba($primary-dark-grey, .05);
+  border-radius: $border-radius;
+  background-color: rgba($dark-grey, .05);
   transition: all .2s;
   font-size: 1.6rem;
   margin: 1rem 0;
 
 
   &::placeholder {
-    color: rgba($primary-dark-grey, 0.75);
+    color: rgba($dark-grey, 0.75);
     font-size: 1.6rem;
     font-weight: 300; 
   } 
 
   &:focus {
-    border:1px solid $primary-green; 
+    border:1px solid $green; 
   }
 
   &:focus::placeholder {
-    color: $color-black;
+    color: $black;
   }
 
   &:disabled {
     opacity: .2;
   }
-
-  
-
 }
-
-
-
-
-
-
-
-
 
 select {
   // appearance: none;
@@ -158,7 +137,7 @@ select {
   cursor: inherit;
   line-height: inherit;
   z-index: 1;
-  color: rgba($primary-dark-grey, 0.75);
+  color: rgba($dark-grey, 0.75);
   outline: none;
 
   &::-ms-expand {
@@ -180,10 +159,10 @@ select {
   cursor: pointer;
   line-height: 1.1;
 
-  // Optional styles
-  // remove for transparency
+  border-radius: $border-radius;
+
   background-color: #fff;
-  background-image: rgba($primary-dark-grey, .05);
+  background-image: rgba($dark-grey, .05);
 
   // Custom arrow
   &:not(.select--multiple)::after {
@@ -193,6 +172,7 @@ select {
     height: 0.5em;
     background-color: #000;
     clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+
   }
 }
 
@@ -204,18 +184,20 @@ select:focus + .focus {
   right: -1px;
   bottom: -1px;
   border: 2px solid var(--select-focus);
-  border-radius: inherit;
+  
 }
 
 select[multiple] {
   padding-right: 0;
   height: 6rem;
-
+  
   option {
     white-space: normal;
-
+    cursor: pointer;
+    border-radius: $border-radius;
+    border: 1px solid $green;
     // Only affects Chrome
-    outline-color: $primary-green;
+    outline-color: $green;
   }
 
  }
@@ -234,9 +216,6 @@ select:focus {
 input[type="date"] {
   width: 100%;
 }
-
-
-
 
 
 .checkboxContainer {
@@ -268,14 +247,14 @@ input[type="date"] {
   left: 0;
   height: 25px;
   width: 25px;
-  background-color: rgba($primary-dark-grey, .05);
+  background-color: rgba($dark-grey, .05);
   border-radius: 4px;
   border: 1px solid #ddd
 }
 
 /* On mouse-over, add a grey background color */
 .checkboxContainer:hover input ~ .checkmark {
-  background-color: rgba($primary-dark-grey, .15);
+  background-color: rgba($dark-grey, .15);
 }
 
 /* When the checkbox is checked, add a blue background */
@@ -315,12 +294,10 @@ textarea {
   height: 15.6rem;
   padding: 1rem;
   border: 1px solid #dddddd;
-  background-color: rgba($primary-dark-grey, .05);
+  background-color: rgba($dark-grey, .05);
   transition: all .2s;
-  font-size: 1.6rem;
-  padding: 12px 20px;
-  box-sizing: border-box; 
-  border-radius: 8px;
+  font-size: 1.6rem; 
+  border-radius: $border-radius;
   resize: none;
   font-family: $main-font;
 
@@ -329,9 +306,10 @@ textarea {
   }
 
   &::placeholder {
-    color: rgba($primary-dark-grey, 0.75);
+    color: rgba($dark-grey, 0.75);
     font-size: 1.6rem;
-    font-weight: 300;
+    font-weight: 400;
+    
 
     @include query(max-w-600){
       font-size: 1.4rem;
@@ -339,11 +317,11 @@ textarea {
   } 
 
   &:focus {
-    border:1px solid $primary-green; 
+    border:1px solid $green; 
   }
 
   &:focus::placeholder {
-    color: $color-black;
+    color: $black;
   }
 
   &:disabled {

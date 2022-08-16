@@ -1,0 +1,48 @@
+.SDGGoalsContainer {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8rem 0 4rem 0;
+
+  &__container {
+    width: 75%;       
+    @extend %flexStart;
+    flex-direction: column;      
+    
+    @include query(max-w-1000){      
+      width: 80%;
+    }
+
+    @include query(max-w-850) {
+      width: 85%;
+    } 
+  }
+
+
+  &__goals {
+    width: 100%;
+    @extend %flexStart;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 450px;
+
+    @include query(max-w-1500) {
+      height: 700px;
+    }
+
+    @include query(max-w-1200) {
+      height: 650px;
+    }
+
+    @include query(max-w-900){
+      height: 700px;
+    }
+
+    @include query(max-w-775){
+      height: 100%;
+    }
+
+  }
+
+}

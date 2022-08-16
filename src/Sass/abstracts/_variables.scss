@@ -1,16 +1,18 @@
 //Colors 
 
-$color-black: #000;
-$color-white: #FFF;
+$black: #000;
+$white: #FFF;
 
-$primary-dark-grey: #334455; 
-$primary-light-grey: #F6F8FA;
-$primary-grey :#F8F8F8;
+$grey :#F8F8F8;
+$dark-grey: #334455; 
+$light-grey: #F6F8FA;
 
-$primary-green: #00AAAA;
-$primary-green-dark: #008080;
-
-
+$green: #00AAAA;
+$dark-green: #008080;
 
 //Main Font
 $main-font: 'Poppins', sans-serif;
+
+//Border Radius
+$border-radius: 8px;
+$border-solid-grey: 1px solid rgba($dark-grey, 0.16);

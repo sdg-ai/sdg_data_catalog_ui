@@ -1,0 +1,327 @@
+[
+  {
+    "title": "Poverty and Equity Database",
+    "sdg": [
+      "sdg1",
+      "sdg10"
+    ],
+    "description": "Latest poverty and inequality indicators compiled from officially recognized international sources. Poverty indicators include the poverty headcount ratio, poverty gap, and number of poor at both international and national poverty lines. Inequality indicators include the Gini index and income or consumption distributions. The database includes national, regional and global estimates.This database is maintained by the Gloabl Poverty Working Group (GPWG), a team of poverty measurement experts from the Poverty Reduction and Equity Network, the Development Research Group, and the Development Data Group.",
+    "summary": "",
+    "last_update": "6/29/2022",
+    "update_frequency": "yearly",
+    "doi": "https://doi.org/10.1787/data-00433-en",
+    "geographic_coverage": "Global",
+    "data_types": [
+      "csv, excel"
+    ],
+    "data_access_link": "https://datacatalog.worldbank.org/search/dataset/0038020",
+    "methodology": "https://www.protectedplanet.net/en/about",
+    "owner": "The World Bank",
+    "contact": "indicators@itu.int",
+    "license": "License: ODC Open Database License ('ODbL') version 1.0, with attribution to AfSIS",
+    "keywords": ["poverty", "equity", "inequalities", "biofuel",
+    "biogas",
+    "biogas",
+    "emissions",
+    "hydropower",
+    "photovoltaic",
+    "renewable energy",
+    "technology",
+    "solar power",
+    "wind power"],
+    "additional_links": [],
+    "papers": [],
+    "id": "1"
+  },
+  {
+    "title": "Poverty and Equity Database",
+    "sdg": [
+      "sdg1",
+      "sdg10"
+    ],
+    "description": "Latest poverty and inequality indicators compiled from officially recognized international sources. Poverty indicators include the poverty headcount ratio, poverty gap, and number of poor at both international and national poverty lines. Inequality indicators include the Gini index and income or consumption distributions. The database includes national, regional and global estimates.This database is maintained by the Gloabl Poverty Working Group (GPWG), a team of poverty measurement experts from the Poverty Reduction and Equity Network, the Development Research Group, and the Development Data Group.",
+    "summary": "",
+    "last_update": "6/29/2022",
+    "update_frequency": "3 month",
+    "doi": "https://doi.org/10.1787/data-00433-en",
+    "geographic_coverage": "Global",
+    "data_types": [
+      "csv, excel"
+    ],
+    "data_access_link": "https://datacatalog.worldbank.org/search/dataset/0038020",
+    "methodology": "https://www.protectedplanet.net/en/about",
+    "owner": "The World Bank",
+    "contact": "indicators@itu.int",
+    "license": "License: ODC Open Database License ('ODbL') version 1.0, with attribution to AfSIS",
+    "keywords": ["poverty", "equity", "inequalities","photovoltaic",
+    "renewable energy",
+    "technology",
+    "solar power",
+    "wind power"],
+    "additional_links": [],
+    "papers": [],
+    "id": "2"
+  },{
+    "title": "Poverty and Equity Database",
+    "sdg": [
+      "sdg1",
+      "sdg10"
+    ],
+    "description": "Latest poverty and inequality indicators compiled from officially recognized international sources. Poverty indicators include the poverty headcount ratio, poverty gap, and number of poor at both international and national poverty lines. Inequality indicators include the Gini index and income or consumption distributions. The database includes national, regional and global estimates.This database is maintained by the Gloabl Poverty Working Group (GPWG), a team of poverty measurement experts from the Poverty Reduction and Equity Network, the Development Research Group, and the Development Data Group.",
+    "summary": "",
+    "update_frequency": "yearly",
+      "last_update": "6/29/2022",
+    "doi": "https://doi.org/10.1787/data-00433-en",
+    "geographic_coverage": "Global",
+    "data_types": [
+      "csv, excel"
+    ],
+    "data_access_link": "https://datacatalog.worldbank.org/search/dataset/0038020",
+    "methodology": "https://www.protectedplanet.net/en/about",
+    "owner": "The World Bank",
+    "contact": "indicators@itu.int",
+    "license": "License: ODC Open Database License ('ODbL') version 1.0, with attribution to AfSIS",
+    "keywords": ["poverty", "equity","photovoltaic",
+    "renewable energy",
+    "technology",
+    "solar power",
+    "wind power"],
+    "additional_links": [],
+    "papers": [],
+    "id": "3"
+  },
+  {
+    "title": "Poverty and Equity Database",
+    "sdg": [
+      "sdg1",
+      "sdg10"
+    ],
+    "description": "Latest poverty and inequality indicators compiled from officially recognized international sources. Poverty indicators include the poverty headcount ratio, poverty gap, and number of poor at both international and national poverty lines. Inequality indicators include the Gini index and income or consumption distributions. The database includes national, regional and global estimates.This database is maintained by the Gloabl Poverty Working Group (GPWG), a team of poverty measurement experts from the Poverty Reduction and Equity Network, the Development Research Group, and the Development Data Group.",
+    "summary": "",
+    "update_frequency": "yearly",
+      "last_update": "6/29/2022",
+    "doi": "https://doi.org/10.1787/data-00433-en",
+    "geographic_coverage": "Global",
+    "data_types": [
+      "csv, excel"
+    ],
+    "data_access_link": "https://datacatalog.worldbank.org/search/dataset/0038020",
+    "methodology": "https://www.protectedplanet.net/en/about",
+    "owner": "The World Bank",
+    "contact": "indicators@itu.int",
+    "license": "License: ODC Open Database License ('ODbL') version 1.0, with attribution to AfSIS",
+    "keywords": ["poverty", "equity","photovoltaic",
+    "renewable energy",
+    "technology",
+    "solar power",
+    "wind power"],
+    "additional_links": [],
+    "papers": [],
+    "id": "4"
+  },
+{
+    "title": "Poverty and Equity Database",
+    "sdg": [
+      "sdg1",
+      "sdg10"
+    ],
+    "description": "Latest poverty and inequality indicators compiled from officially recognized international sources. Poverty indicators include the poverty headcount ratio, poverty gap, and number of poor at both international and national poverty lines. Inequality indicators include the Gini index and income or consumption distributions. The database includes national, regional and global estimates.This database is maintained by the Gloabl Poverty Working Group (GPWG), a team of poverty measurement experts from the Poverty Reduction and Equity Network, the Development Research Group, and the Development Data Group.",
+    "summary": "",
+    "update_frequency": "yearly",
+      "last_update": "6/29/2022",
+    "doi": "https://doi.org/10.1787/data-00433-en",
+    "geographic_coverage": "Global",
+    "data_types": [
+      "csv, excel"
+    ],
+    "data_access_link": "https://datacatalog.worldbank.org/search/dataset/0038020",
+    "methodology": "https://www.protectedplanet.net/en/about",
+    "owner": "The World Bank",
+    "contact": "indicators@itu.int",
+    "license": "License: ODC Open Database License ('ODbL') version 1.0, with attribution to AfSIS",
+    "keywords": ["poverty", "equity", "inequalities","photovoltaic",
+    "renewable energy",
+    "technology",
+    "solar power",
+    "wind power"],
+    "additional_links": [],
+    "papers": [],
+    "id": "5"
+  },
+{
+    "title": "Poverty and Equity Database",
+    "sdg": [
+      "sdg1",
+      "sdg10"
+    ],
+    "description": "Latest poverty and inequality indicators compiled from officially recognized international sources. Poverty indicators include the poverty headcount ratio, poverty gap, and number of poor at both international and national poverty lines. Inequality indicators include the Gini index and income or consumption distributions. The database includes national, regional and global estimates.This database is maintained by the Gloabl Poverty Working Group (GPWG), a team of poverty measurement experts from the Poverty Reduction and Equity Network, the Development Research Group, and the Development Data Group.",
+    "summary": "",
+    "update_frequency": "yearly",
+      "last_update": "6/29/2022",
+    "doi": "https://doi.org/10.1787/data-00433-en",
+    "geographic_coverage": "Global",
+    "data_types": [
+      "csv, excel"
+    ],
+    "data_access_link": "https://datacatalog.worldbank.org/search/dataset/0038020",
+    "methodology": "https://www.protectedplanet.net/en/about",
+    "owner": "The World Bank",
+    "contact": "indicators@itu.int",
+    "license": "License: ODC Open Database License ('ODbL') version 1.0, with attribution to AfSIS",
+    "keywords": ["poverty", "equity", "inequalities"],
+    "additional_links": [],
+    "papers": [],
+    "id": "6"
+  },
+{
+    "title": "Poverty and Equity Database",
+    "sdg": [
+      "sdg1",
+      "sdg10"
+    ],
+    "description": "Latest poverty and inequality indicators compiled from officially recognized international sources. Poverty indicators include the poverty headcount ratio, poverty gap, and number of poor at both international and national poverty lines. Inequality indicators include the Gini index and income or consumption distributions. The database includes national, regional and global estimates.This database is maintained by the Gloabl Poverty Working Group (GPWG), a team of poverty measurement experts from the Poverty Reduction and Equity Network, the Development Research Group, and the Development Data Group.",
+    "summary": "",
+    "update_frequency": "yearly",
+      "last_update": "6/29/2022",
+    "doi": "https://doi.org/10.1787/data-00433-en",
+    "geographic_coverage": "Global",
+    "data_types": [
+      "csv, excel"
+    ],
+    "data_access_link": "https://datacatalog.worldbank.org/search/dataset/0038020",
+    "methodology": "https://www.protectedplanet.net/en/about",
+    "owner": "The World Bank",
+    "contact": "indicators@itu.int",
+    "license": "License: ODC Open Database License ('ODbL') version 1.0, with attribution to AfSIS",
+    "keywords": ["poverty", "equity", "inequalities"],
+    "additional_links": [],
+    "papers": [],
+    "id": "7"
+  },
+{
+    "title": "Poverty and Equity Database",
+    "sdg": [
+      "sdg1",
+      "sdg10"
+    ],
+    "description": "Latest poverty and inequality indicators compiled from officially recognized international sources. Poverty indicators include the poverty headcount ratio, poverty gap, and number of poor at both international and national poverty lines. Inequality indicators include the Gini index and income or consumption distributions. The database includes national, regional and global estimates.This database is maintained by the Gloabl Poverty Working Group (GPWG), a team of poverty measurement experts from the Poverty Reduction and Equity Network, the Development Research Group, and the Development Data Group.",
+    "summary": "",
+    "update_frequency": "yearly",
+      "last_update": "6/29/2022",
+    "doi": "https://doi.org/10.1787/data-00433-en",
+    "geographic_coverage": "Global",
+    "data_types": [
+      "csv, excel"
+    ],
+    "data_access_link": "https://datacatalog.worldbank.org/search/dataset/0038020",
+    "methodology": "https://www.protectedplanet.net/en/about",
+    "owner": "The World Bank",
+    "contact": "indicators@itu.int",
+    "license": "License: ODC Open Database License ('ODbL') version 1.0, with attribution to AfSIS",
+    "keywords": ["poverty", "equity", "inequalities"],
+    "additional_links": [],
+    "papers": [],
+    "id": "8"
+  },
+{
+    "title": "Poverty and Equity Database",
+    "sdg": [
+      "sdg1",
+      "sdg10"
+    ],
+    "description": "Latest poverty and inequality indicators compiled from officially recognized international sources. Poverty indicators include the poverty headcount ratio, poverty gap, and number of poor at both international and national poverty lines. Inequality indicators include the Gini index and income or consumption distributions. The database includes national, regional and global estimates.This database is maintained by the Gloabl Poverty Working Group (GPWG), a team of poverty measurement experts from the Poverty Reduction and Equity Network, the Development Research Group, and the Development Data Group.",
+    "summary": "",
+    "update_frequency": "yearly",
+      "last_update": "6/29/2022",
+    "doi": "https://doi.org/10.1787/data-00433-en",
+    "geographic_coverage": "Global",
+    "data_types": [
+      "csv, excel"
+    ],
+    "data_access_link": "https://datacatalog.worldbank.org/search/dataset/0038020",
+    "methodology": "https://www.protectedplanet.net/en/about",
+    "owner": "The World Bank",
+    "contact": "indicators@itu.int",
+    "license": "License: ODC Open Database License ('ODbL') version 1.0, with attribution to AfSIS",
+    "keywords": ["poverty", "equity", "inequalities"],
+    "additional_links": [],
+    "papers": [],
+    "id": "9"
+  },
+{
+    "title": "Poverty and Equity Database",
+    "sdg": [
+      "sdg1",
+      "sdg10"
+    ],
+    "description": "Latest poverty and inequality indicators compiled from officially recognized international sources. Poverty indicators include the poverty headcount ratio, poverty gap, and number of poor at both international and national poverty lines. Inequality indicators include the Gini index and income or consumption distributions. The database includes national, regional and global estimates.This database is maintained by the Gloabl Poverty Working Group (GPWG), a team of poverty measurement experts from the Poverty Reduction and Equity Network, the Development Research Group, and the Development Data Group.",
+    "summary": "",
+    "update_frequency": "yearly",
+      "last_update": "6/29/2022",
+    "doi": "https://doi.org/10.1787/data-00433-en",
+    "geographic_coverage": "Global",
+    "data_types": [
+      "csv, excel"
+    ],
+    "data_access_link": "https://datacatalog.worldbank.org/search/dataset/0038020",
+    "methodology": "https://www.protectedplanet.net/en/about",
+    "owner": "The World Bank",
+    "contact": "indicators@itu.int",
+    "license": "License: ODC Open Database License ('ODbL') version 1.0, with attribution to AfSIS",
+    "keywords": ["poverty", "equity", "inequalities"],
+    "additional_links": [],
+    "papers": [],
+    "id": "10"
+  },
+{
+    "title": "Poverty and Equity Database",
+    "sdg": [
+      "sdg1",
+      "sdg10"
+    ],
+    "description": "Latest poverty and inequality indicators compiled from officially recognized international sources. Poverty indicators include the poverty headcount ratio, poverty gap, and number of poor at both international and national poverty lines. Inequality indicators include the Gini index and income or consumption distributions. The database includes national, regional and global estimates.This database is maintained by the Gloabl Poverty Working Group (GPWG), a team of poverty measurement experts from the Poverty Reduction and Equity Network, the Development Research Group, and the Development Data Group.",
+    "summary": "",
+    "update_frequency": "yearly",
+      "last_update": "6/29/2022",
+    "doi": "https://doi.org/10.1787/data-00433-en",
+    "geographic_coverage": "Global",
+    "data_types": [
+      "csv, excel"
+    ],
+    "data_access_link": "https://datacatalog.worldbank.org/search/dataset/0038020",
+    "methodology": "https://www.protectedplanet.net/en/about",
+    "owner": "The World Bank",
+    "contact": "indicators@itu.int",
+    "license": "License: ODC Open Database License ('ODbL') version 1.0, with attribution to AfSIS",
+    "keywords": ["poverty", "equity", "inequalities"],
+    "additional_links": [],
+    "papers": [],
+    "id": "11"
+  },
+{
+    "title": "Poverty and Equity Database",
+    "sdg": [
+      "sdg1",
+      "sdg10"
+    ],
+    "description": "Latest poverty and inequality indicators compiled from officially recognized international sources. Poverty indicators include the poverty headcount ratio, poverty gap, and number of poor at both international and national poverty lines. Inequality indicators include the Gini index and income or consumption distributions. The database includes national, regional and global estimates.This database is maintained by the Gloabl Poverty Working Group (GPWG), a team of poverty measurement experts from the Poverty Reduction and Equity Network, the Development Research Group, and the Development Data Group.",
+    "summary": "",
+    "update_frequency": "yearly",
+      "last_update": "6/29/2022",
+    "doi": "https://doi.org/10.1787/data-00433-en",
+    "geographic_coverage": "Global",
+    "data_types": [
+      "csv, excel"
+    ],
+    "data_access_link": "https://datacatalog.worldbank.org/search/dataset/0038020",
+    "methodology": "https://www.protectedplanet.net/en/about",
+    "owner": "The World Bank",
+    "contact": "indicators@itu.int",
+    "license": "License: ODC Open Database License ('ODbL') version 1.0, with attribution to AfSIS",
+    "keywords": ["poverty", "equity", "inequalities"],
+    "additional_links": [],
+    "papers": [],
+    "id": "12"
+  }
+]
+

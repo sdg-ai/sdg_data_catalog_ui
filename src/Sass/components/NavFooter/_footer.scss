@@ -1,0 +1,125 @@
+.footer {
+  width: 100vw;
+  height: 25rem;
+  background-color: $dark-grey;
+  @extend %flexCenter;
+
+  @include query(max-w-850){
+    height: 100%;
+  }
+
+  &__container {
+    color: $white;
+    @extend %flexCenter;
+    width: 75%;
+    padding: 2rem 0;
+
+    @include query(max-w-1000){
+      width: 85%;
+    }
+
+    @include query(max-w-775){
+      flex-direction: column-reverse;
+    }
+
+  
+  }
+
+  &__left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    
+    @include query(max-w-775){
+      border-top: 1px solid rgba($grey, 0.5);
+      padding: 2rem 0;
+      margin: 2rem 0;
+      align-items: center;
+      width: 90%
+    }
+   
+  }
+
+  &__titleContainer{
+    @extend %flexCenter;
+      
+  }
+
+  &__logoContainer {
+    width: 35px;
+    height: 48px;
+    margin-right: 10px;
+  }
+
+  &__logo {
+    width: 100%;
+    height: auto;
+  }
+
+  &__title{
+    line-height: 2rem;
+
+    &--bold {
+      font-weight: 900;
+    }
+
+    & p{
+      font-size: 2rem;
+    }
+  }
+
+  &__disclaimer {
+    margin-top: 2rem;
+    font-size: 1.4em;
+
+    @include query(max-w-775){
+      text-align: center;
+    }
+
+    & a {
+      color: $green;
+
+      &:hover {
+        color: $dark-green;
+      }
+    }
+  }
+
+
+
+
+  &__right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+
+    @include query(max-w-775){
+      width: 90%;
+      align-items: center;
+      margin: 2rem 0;
+    }
+  }
+
+  &__socialIconsContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__shareContainer {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    margin-right: 1rem;
+  }
+
+ &__icon {
+  padding: 0 1rem;
+  margin: 0 .5rem;
+ }
+}

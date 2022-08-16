@@ -1,11 +1,15 @@
 .submitNewDataSetBanner{
   width: 100vw;
-  @include flexCenter;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 8rem 0 8rem 0;
 
   &__container {
     width: 75%;
-    @include flexStart;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: column; 
 
     @include query(max-w-1000){
@@ -22,7 +26,9 @@
 
   &__bttContainer {
     width: 100%;
-    @include flexStartCenter;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 
     @include query(max-w-1000){
     justify-content: center;

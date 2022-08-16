@@ -10,22 +10,24 @@ import RelevantSDGsForm from "./RelevantSDGsForm";
 const initialValues = {
   name: "",
   email: "",
-  datasetTitle: "",
-  websiteLink: "",
-  lastUpdate: "",
-  updateFrequency: undefined,
-  geography: undefined,
-  goals: [],
+  title: "",
+  data_access_link: "",
+  last_update: "",
+  update_frequency: undefined,
+  geographic_coverage: undefined,
+  sdg: [],
   keywords: "",
-  license: "",
-  DOI: "",
+  owner: "",
+  doi: "",
   description: "",
   additionalInfo: "",
 };
 
 const SubmitDatasetForm = () => {
   const [inputType, setInputType] = useState("text");
-  const [tags, setTags] = useState([
+  const [bttDisabled, setBttDisabled] = useState(false);
+  const [tags, setTags] = useState([]);
+  const [tagsSuggestion, setTagsSuggestion] = useState([
     "biofuel",
     "biogas",
     "biogas",
@@ -45,29 +47,35 @@ const SubmitDatasetForm = () => {
   const [keywordsToggle, setKeywordsToggle] = useState(false);
   const [additionalInfoToggle, setAdditionalInfoToggle] = useState(false);
 
-  //Function that adds each selected goal to the goals array
+  //Function that adds each selected sdg to the sdg array
   const handleGoalsSelection = (e) => {
     const { name } = e.target;
-    let newArray = [...values.goals, name];
-    if (values.goals.includes(name)) {
-      newArray = newArray.filter((goal) => goal !== name);
+    let newArray = [...values.sdg, name];
+    if (values.sdg.includes(name)) {
+      newArray = newArray.filter((sdg) => sdg !== name);
     }
 
     setValues({
       ...values,
-      goals: newArray,
+      sdg: newArray,
     });
   };
 
-  /*
-TODO - Add key words by pressing the tags but not allowing repeated ones, remove from the list of tags
-  */
-  const handleSuggestedKeywordPress = (keyword) => {
-    // const newTags = tags.filter((tag) => tag !== keyword);
-    // setTags(newTags);
-    // setValues({
-    //   ...values
-    // });
+  const handleTagRemove = (keyword) => {
+    const newTags = tags.filter((tag) => tag !== keyword);
+    setTags(newTags);
+  };
+
+  const handleTagsSuggestionRemove = (keyword) => {
+    const newTags = tagsSuggestion.filter((tag) => tag !== keyword);
+    setTagsSuggestion(newTags);
+
+    if (tags.some((tag) => tag === keyword.toLowerCase())) return;
+    setTags((prev) => [...prev, keyword]);
+  };
+
+  const handleAddTag = (keyword) => {
+    setTags((prev) => [...prev, keyword.toLowerCase()]);
   };
 
   const handleInputChange = (e) => {
@@ -83,13 +91,21 @@ TODO - Add key words by pressing the tags but not allowing repeated ones, remove
     setConfirmation(true);
   };
 
+  const disableSubmitButton = () => {
+    setBttDisabled(true);
+  };
+
+  const enableSubmitButton = () => {
+    setBttDisabled(false);
+  };
+
   return (
     <div>
       {confirmation ? (
         <SubmitConfirmation />
       ) : (
-        <section className="submitDatasetForm">
-          <section className="submitDatasetForm__container">
+        <div className="submitDatasetForm">
+          <div className="submitDatasetForm__container">
             {/* Title */}
             <section className="submitDatasetForm__titleContainer">
               <h1>Submit a dataset</h1>
@@ -130,7 +146,7 @@ TODO - Add key words by pressing the tags but not allowing repeated ones, remove
 
               {/* Keywords dropdown */}
 
-              <section className="submitDatasetForm__keywords submitDatasetForm__containerSeparator">
+              <section className="submitDatasetForm__keywordsContainer submitDatasetForm__containerSeparator">
                 <div
                   onClick={() => setKeywordsToggle(!keywordsToggle)}
                   className="submitDatasetForm__optionalTitle"
@@ -142,14 +158,21 @@ TODO - Add key words by pressing the tags but not allowing repeated ones, remove
                   )}
                   <h5>Choose tags / keyword (optional)</h5>
                 </div>
-                {keywordsToggle && (
-                  <KeywordsForm
-                    values={values}
-                    handleInputChange={handleInputChange}
-                    handleSuggestedKeywordPress={handleSuggestedKeywordPress}
-                    tags={tags}
-                  />
-                )}
+                <div className="submitDatasetForm__keywords">
+                  {keywordsToggle && (
+                    <KeywordsForm
+                      values={values}
+                      handleInputChange={handleInputChange}
+                      handleTagRemove={handleTagRemove}
+                      handleTagsSuggestionRemove={handleTagsSuggestionRemove}
+                      tags={tags}
+                      handleAddTag={handleAddTag}
+                      disableSubmitButton={disableSubmitButton}
+                      enableSubmitButton={enableSubmitButton}
+                      tagsSuggestion={tagsSuggestion}
+                    />
+                  )}
+                </div>
               </section>
 
               {/* Additional Information dropdown */}
@@ -174,11 +197,13 @@ TODO - Add key words by pressing the tags but not allowing repeated ones, remove
                 <p>*required fields</p>
               </section>
               <section className="submitDatasetForm__bttContainer">
-                <button className="btt">Submit now</button>
+                <button disabled={bttDisabled} className="btt">
+                  Submit now
+                </button>
               </section>
             </form>
-          </section>
-        </section>
+          </div>
+        </div>
       )}
     </div>
   );

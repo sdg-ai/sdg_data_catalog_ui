@@ -2,11 +2,12 @@ import { useEffect, useState } from "react";
 
 //React router
 import { Link } from "react-router-dom";
+import OutsideClickHandler from "../Hooks/OutsideClickHandler";
 
 //TEMPORARY DATA
 import { tempResults } from "../utils/tempDataArray";
 
-const SearchBar = ({ transparent }) => {
+const SearchBar = ({ transparent = false, handleBlur }) => {
   const [searchResults, setSearchResults] = useState(0);
   const [searchTerm, setSearchTerm] = useState("");
   const [placeHolder, setPlaceHolder] = useState("Search for datasets & Keywords");
@@ -36,46 +37,49 @@ const SearchBar = ({ transparent }) => {
 
   return (
     <div className={`searchBar ${transparent && "searchBar--transparent"}`}>
-      <div className="searchBar__container">
-        <form onSubmit={handleBarSearch}>
-          {searchResults < 1 ? (
-            <i
-              className="fa-solid fa-magnifying-glass navBar__searchIcon searchIcon"
-              onClick={handleBarSearch}
-            ></i>
-          ) : (
-            <i
-              className="fa-solid fa-xmark navBar__searchIcon searchIcon"
-              onClick={handleBarClearSearch}
-            ></i>
-          )}
-          <input
-            type="text"
-            placeholder={placeHolder}
-            className="mainTextInput"
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-          />
-        </form>
-      </div>
-      {searchResults > 0 && (
-        <section className="searchBar__resultsContainer">
-          {tempResults.map((result) => (
-            <section key={result.id}>
-              <img alt="something" src={require(`../assets/tempPhotos/${result.imageURL}`)} />
-              <div>
-                <h5>{result.title}</h5>
-                {result.subTitle && <p>{result.subTitle}</p>}
-              </div>
-            </section>
-          ))}
-          <div className="resultsBar__footer">
-            <Link to="/search-results">
-              <p>Show all results (38)</p>
-            </Link>
-          </div>
-        </section>
-      )}
+      <OutsideClickHandler handleBlur={handleBlur}>
+        <div className="searchBar__container">
+          <form onSubmit={handleBarSearch}>
+            {searchResults < 1 ? (
+              <i
+                className="fa-solid fa-magnifying-glass navBar__searchIcon searchIcon"
+                onClick={handleBarSearch}
+              ></i>
+            ) : (
+              <i
+                className="fa-solid fa-xmark navBar__searchIcon searchIcon"
+                onClick={handleBarClearSearch}
+              ></i>
+            )}
+            <input
+              type="text"
+              placeholder={placeHolder}
+              className="mainTextInput"
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              // onBlur={handleBlur}
+            />
+          </form>
+        </div>
+        {searchResults > 0 && (
+          <section className="searchBar__resultsContainer">
+            {tempResults.map((result) => (
+              <section key={result.id}>
+                <img alt="something" src={require(`../assets/tempPhotos/${result.imageURL}`)} />
+                <div>
+                  <h5>{result.title}</h5>
+                  {result.subTitle && <p>{result.subTitle}</p>}
+                </div>
+              </section>
+            ))}
+            <div className="resultsBar__footer">
+              <Link to="/search-results">
+                <p>Show all results (38)</p>
+              </Link>
+            </div>
+          </section>
+        )}
+      </OutsideClickHandler>
     </div>
   );
 };

@@ -1,25 +1,25 @@
-.hero {
+.homeHero {
   width: 100vw;
   height: 620px;
   background-image: 
   linear-gradient( 
     to right,
-  rgba($primary-dark-grey, 0.6),
-  rgba($primary-dark-grey, 0.6)
+  rgba($dark-grey, 0.6),
+  rgba($dark-grey, 0.6)
   ),
   url('../../../assets/backgrounds/Hero-background.jpg');
   background-size: cover;
   background-position: center; /*It makes sure, when resizing, the top of the picture stays*/
-  @include flexCenter;
+  @extend %flexCenter;
   flex-direction: column;
-  color: $color-white;
+  color: $white;
 
   @include query(max-w-550){
-    height: 95vh
+    height: 100vh
   }
 
   &__container{
-    @include flexCenter;
+    @extend %flexCenter;
     flex-direction: column;
     width: 40%;
 
@@ -65,32 +65,31 @@
     
     & h2 {
       line-height: 2.6rem;
+      font-size: 1.8rem;
       font-weight: 500;
       padding: 1rem 2rem 1rem 2rem;
 
-      @include query(max-w-550){
-        font-size: 1.6rem;
-      }
+    
     }
 
   }
 
   &__input {
     width: 100%;
-    background-color: $color-white;
+    background-color: $white;
     border-radius: 6px;
     overflow: hidden;
-    margin: 2rem;
+    margin: 2rem 0;
     
     
     & i {
-      color: rgba($primary-dark-grey, 0.8);
+      color: rgba($dark-grey, 0.8);
       padding-left: .5rem;
     }
    
 
     & form {
-      @include flexCenter;
+      @extend %flexCenter;
       
       
     }
@@ -102,21 +101,31 @@
       border: none;  
       font-size: 1.8rem;
       transition: all .2s;
-      border-right: 10px solid $color-white;
+      border-right: 10px solid $white;
       
       &:focus {
-        border-right: 10px solid $primary-green;
+        border-right: 10px solid $green;
       }
       
       &::placeholder {
-        color: $primary-dark-grey;
+        color: $dark-grey;
         font-size: 1.8rem;
         font-weight: 300;
       }   
 
-    }
+    }    
+  }
 
-    
+
+  &__datasets {
+    padding-top: 2rem;
+    & p {
+      font-size: 1.6rem;
+
+      @include query(max-w-600){
+        font-size: 1.5rem;
+      }
+    }
   }
 }
 
@@ -125,7 +134,7 @@
   position: absolute;
   bottom: 10%;
   left: 50%;
-  color: $primary-green;
+  color: $green;
   font-size: 3rem;
   transform: translateX(-50%);
 

@@ -30,18 +30,18 @@ const DetailsForm = ({ values, handleInputChange, setInputType, inputType }) => 
           className="mainInputText"
           type="text"
           placeholder="Enter Dataset Title*"
-          value={values.datasetTitle}
+          value={values.title}
           onChange={handleInputChange}
-          name="datasetTitle"
+          name="title"
           required
         />
         <input
           className="mainInputText"
           type="text"
           placeholder="Enter Website Link*"
-          value={values.websiteLink}
+          value={values.data_access_link}
           onChange={handleInputChange}
-          name="websiteLink"
+          name="data_access_link"
           required
         />
         <div className="submitDatasetForm__datasetDetails--horizontal">
@@ -51,20 +51,20 @@ const DetailsForm = ({ values, handleInputChange, setInputType, inputType }) => 
             type={inputType}
             onFocus={() => setInputType("date")}
             onBlur={() => {
-              if (values.lastUpdate.length > 1) return;
+              if (values.last_update.length > 1) return;
               setInputType("text");
             }}
-            value={values.lastUpdate}
+            value={values.last_update}
             onChange={handleInputChange}
-            name="lastUpdate"
+            name="last_update"
             required
           />
           <i className="fa-solid fa-calendar"></i>
           <select
             className="mainInputText select"
-            value={values.updateFrequency}
+            value={values.update_frequency}
             onChange={handleInputChange}
-            name="updateFrequency"
+            name="update_frequency"
             required
             defaultValue="Update Frequency*"
           >
@@ -78,10 +78,10 @@ const DetailsForm = ({ values, handleInputChange, setInputType, inputType }) => 
         </div>
         <select
           className="mainInputText select"
-          value={values.geography}
+          value={values.geographic_coverage}
           onChange={handleInputChange}
           defaultValue="Choose related Region / Geography*"
-          name="geography"
+          name="geographic_coverage"
           required
         >
           <option value="Choose related Region / Geography*" disabled hidden>

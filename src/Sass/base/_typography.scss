@@ -2,30 +2,30 @@
   font-weight: 400;
   line-height: 1.7;
   font-family: $main-font;
-  color: $primary-dark-grey;
+  color: $dark-grey;
 }
 
 a, .searchIcon {
   cursor: pointer;
   text-decoration: none;
-  color: $primary-dark-grey;
+  color: $dark-grey;
   transition: all .3s;
 }
 
 .a--transparent, .searchIcon--transparent {
   cursor: pointer;  
   text-decoration: none;
-  color: $color-white;
+  color: $white;
   transition: all .3s;
 }
 
 a:hover, .searchIcon:hover, .liTransparent:hover {
   cursor: pointer;
-  color: $primary-green
+  color: $green
 }
 
 .liTransparent {
-  color: $color-white;
+  color: $white;
   transition: all .3s;
 }
 
@@ -57,11 +57,6 @@ h4 {
 h5 {
   //TODO - Adjust font size with project design
   font-size: 1.6rem;
-}
-
-p {
-    //TODO - Adjust font size with project design
-    font-size: 1.4rem; 
 }
 
 li{

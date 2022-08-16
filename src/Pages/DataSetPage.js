@@ -1,28 +1,35 @@
 //Components
-import Navbar from "../Components/Nav&Footer/Navbar";
+import Navbar from "../Components/NavFooter/Navbar";
 import SDGDatasetHero from "../Components/SDGDatasetHero";
 import SubmitNewDataSetBanner from "../Components/SubmitNewDataSetBanner";
-import SimilarDataSets from "../Components/DataSetPageComponents/SimilarDataSets";
-import DatasetTrends from "../Components/DataSetPageComponents/DatasetTrends";
-import RelatedPublications from "../Components/DataSetPageComponents/RelatedPublications";
+import SimilarDataSetsContainer from "../Components/DataSetPageComponents/SimilarDataSetsContainer";
+import DatasetTrendsContainer from "../Components/DataSetPageComponents/DatasetTrendsContainer";
+import RelatedPublicationsContainer from "../Components/DataSetPageComponents/RelatedPublicationsContainer";
+
+//Meta Wrappers
+import Meta from "../Components/MetaWrapper";
 
 //TEMPORARY DATA
 import tempLogo from "../assets/tempPhotos/tempDataSetImage1.jpg";
 
 const DataSetPage = () => {
   return (
-    <section>
+    <div className="dataSetPage">
+      <Meta title="SDG Data Catalog || Dataset" />
       <Navbar />
-      <SDGDatasetHero
-        dataSetPage
-        logo={tempLogo}
-        title="Irena Renewable Energy Statistics Lorem ipsum dolor"
-      />
-      <RelatedPublications />
-      <DatasetTrends />
-      <SimilarDataSets />
-      <SubmitNewDataSetBanner />
-    </section>
+      <main>
+        <SDGDatasetHero
+          dataSetPage
+          logo={tempLogo}
+          title="Irena Renewable Energy Statistics Lorem ipsum dolor"
+        />
+        <RelatedPublicationsContainer />
+        <DatasetTrendsContainer />
+        <SimilarDataSetsContainer />
+
+        <SubmitNewDataSetBanner />
+      </main>
+    </div>
   );
 };
 

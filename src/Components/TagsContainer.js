@@ -1,18 +1,18 @@
-const TagsContainer = ({ tags, handleSuggestedKeywordPress, form }) => {
+const TagsContainer = ({ tags, handleTagRemove, form, selectedTag }) => {
   return (
-    <section className="tagsContainer">
-      {tags.map((tag, index) => (
+    <div className="tagsContainer">
+      {tags?.map((tag, index) => (
         <div
           onClick={() => {
-            form && handleSuggestedKeywordPress(tag);
+            form && handleTagRemove(tag);
           }}
-          className="tagsContainer__tag"
+          className={`tagsContainer__tag ${selectedTag ? "tagsContainer--selected" : ""}`}
           key={`${tag}-${index}`}
         >
           <p>{tag}</p>
         </div>
       ))}
-    </section>
+    </div>
   );
 };
 

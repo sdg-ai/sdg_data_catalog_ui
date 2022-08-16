@@ -1,0 +1,50 @@
+.SDGGoalCard {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 360px;
+  margin-right: 2rem;
+
+  @include query(max-w-775){
+    margin-right: 0;
+  }
+
+  @include query(max-w-400){
+    width: 300px;
+  }
+
+  &__imgContainer {
+    margin: 1rem 2rem;
+    width: 5.4rem;
+    height: 5.4rem;
+
+    & img {
+      width:100%;
+      height: 100%;
+    }
+  }
+
+  &__textContainer {
+    line-height: 2rem;
+
+   
+    & h4 {
+      font-weight: 800;
+      font-size: 1.5rem;
+
+    }
+
+    & p {
+      font-size: 1.5rem;
+    }
+  }  
+
+  &:hover {
+    background-color: rgba($green, 0.1);
+    cursor: pointer;
+    border-radius: $border-radius;
+    color: $green;
+
+  }
+
+}

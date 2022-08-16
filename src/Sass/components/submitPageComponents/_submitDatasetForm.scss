@@ -1,6 +1,6 @@
 .submitDatasetForm {
   width: 100vw;
-  @include flexCenter;
+  @extend %flexCenter;
 
   & textarea {
     width: 100%;
@@ -12,14 +12,14 @@
   }
 
   &__containerSeparator {
-    border-top: 1px dotted rgba($color-black, 0.6);
+    border-top: 1px dotted rgba($black, 0.6);
     margin: 1rem 0;
   }
 
 
   &__container {
     width: 40%;
-    @include flexCenter;
+    @extend %flexCenter;
     flex-direction: column;
 
     @include query(max-w-1000){
@@ -33,7 +33,7 @@
 
   &__titleContainer {
     width: 100%;
-    @include flexCenter;
+    @extend %flexCenter;
     flex-direction: column;
     padding: 5rem 0;
 
@@ -50,7 +50,7 @@
 
   &__form {
     width: 100%;
-    @include flexCenter;
+    @extend %flexCenter;
     flex-direction: column;
 
     & section {
@@ -60,20 +60,20 @@
   }
 
   &__personalDetails{
-    border-top: 1px dotted rgba($color-black, 0.6);
+    border-top: 1px dotted rgba($black, 0.6);
     margin: 1rem 0;  
   }
 
 
   &__datasetDetails {
-    border-top: 1px dotted rgba($color-black, 0.6);
+    border-top: 1px dotted rgba($black, 0.6);
     margin: 1rem 0;
   
 
     & i {
       padding: 0rem 1rem 0 1rem;
       font-size: 2rem;
-      color: rgba($color: $color-black, $alpha: .6);
+      color: rgba($color: $black, $alpha: .6);
 
       @include query(max-w-480){
       display: none;
@@ -82,7 +82,9 @@
 
     &--horizontal {
       width: 100%;
-      @include flexBetweenCenter;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
      
       @include query(max-w-480){
         flex-direction: column;
@@ -93,7 +95,7 @@
   }
   
   &__SDGGoals {
-    @include flexStart;
+    @extend %flexStart;
     flex-direction: column;
     flex-wrap: wrap;
     
@@ -105,7 +107,7 @@
 
 
   &__checkboxContainer{
-    @include flexStart;
+    @extend %flexStart;
     flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
@@ -125,32 +127,37 @@
     }
   }
 
+  &__keywordsContainer {
+    width: 100%;
+    @extend %flexStart;
+    flex-direction: column;
+  }
+
   &__keywords {
     width: 100%;
-    @include flexStart;
-    flex-direction: column;
   }
 
 
   &__additionalInfo{
     width: 100%;
-    @include flexStart;
+    @extend %flexStart;
     flex-wrap: wrap;
   }
 
   &__optionalTitle {
-    @include flexCenter;
+    @extend %flexCenter;
     transition: all .2s;
+ 
 
     & i {
-      color: $primary-green;
+      color: $green;
       font-size: 2rem;
       padding-right: 1rem;
     }
 
     &:hover {
       cursor: pointer;
-      color: $primary-green;
+      color: $green;
     }
   }
 
@@ -160,7 +167,7 @@
     & p {
       font-size: 1.6rem;
       margin: 1rem 0;
-      color: rgba($primary-dark-grey, .6);
+      color: rgba($dark-grey, .6);
     }
   }
 
@@ -168,3 +175,35 @@
     margin-bottom: 10rem;
   }
 }
+
+.keywordForm {
+  width:100%;
+
+  & p {
+    padding: .5rem 0;
+    font-size: 12px;
+  }
+  
+  &__inputContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    & input {
+      width: 90%;
+    }
+
+    & i {
+      font-size: 3rem;
+      color: $green;
+      padding-left: 2rem;
+      cursor: pointer;
+
+      &:hover{
+        color: $dark-green;
+      }
+    }
+  }
+}
+
+

@@ -1,26 +1,36 @@
 
 .tagsContainer{
-  @include flexStart;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-wrap: wrap;   
     width: 100%;   
 
 
     &__tag {
-      background-color: $primary-light-grey;
+      background-color: $light-grey;
       border-radius: 4px;
-      padding: .2rem .5rem;
+      padding: .2rem .8rem;
       margin: .5rem;
       transition: all .3s;
   
       & p {
-        font-size: 1rem;
+        font-size: 10px;
        }
   
       &:hover{
         cursor: pointer;
-        background-color: rgba($primary-green, 0.2);
-        color: $primary-green;
+        background-color: rgba($green, 0.2);
+        color: $green;
       }
-  }
 
+    }
+    &--selected {
+      background-color: $green;
+      color: $white;
+    }
+
+    &--alreadyExists {
+      box-shadow: 0 0 20px rgba(#000, 0.5);
+    }
   }

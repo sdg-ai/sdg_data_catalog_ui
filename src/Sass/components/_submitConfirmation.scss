@@ -1,10 +1,10 @@
 .submitConfirmation {
-  @include flexCenter;
+  @extend %flexCenter;
   height: 75vh;
 
   &__container {
-  @include flexCenter;
-  flex-direction: column;
+    @extend %flexCenter;
+    flex-direction: column;
   }
 
   & h1 {

@@ -1,13 +1,14 @@
 export const dataSets = [
   {
     title: "Dataset Long Title Irena Renewable Energy Statistics Lorem Ipsum do max 80 chars",
+    id: 1,
     img: "tempDataSetImage1.jpg",
     description:
       "Latest poverty and inequality indicators compiled from officially recognized international sources. Poverty indicators include the poverty headcount ratio, poverty gap, and number of poor at both international and national poverty lines. Inequality indicators include the Gini index and income or consumption distributions. The database includes national, regional and global estimates.This database is maintained by the Gloabl Poverty Working Group (GPWG), a team of poverty measurement experts from the Poverty Reduction and Equity Network, the Development Research Group, and the Development Data Group.",
     lastUpdate: "01-06-2022",
     frequency: "3 months",
     geography: "North America",
-    tags: [
+    keywords: [
       "biofuel",
       "biogas",
       "biogas",
@@ -22,43 +23,47 @@ export const dataSets = [
   },
   {
     title: "European Data Portal",
+    id: 2,
     img: "tempDataSetImage2.jpg",
     description:
       "Dataset Description Detailed statistics on renewable energy capacity, power generation and renewable energy balances. Lorem ipsum dolor sit amet, consectet adipiscing elit sed max 190 chars.",
     lastUpdate: "01-06-2022",
     frequency: "3 months",
     geography: "North America",
-    tags: ["biofuel", "biogas", "biogas", "emissions", "hydropower", "photovoltaic"],
+    keywords: ["biofuel", "biogas", "biogas", "emissions", "hydropower", "photovoltaic"],
   },
   {
     title: "Figshare – River Plastic Emissions to the World’s Oceans ",
+    id: 3,
     img: "tempDataSetImage3.jpg",
     description:
       "Dataset Description Detailed statistics on renewable energy capacity, power generation and renewable energy balances. Lorem ipsum dolor sit amet, consectet adipiscing elit sed max 190 chars.",
     lastUpdate: "01-06-2022",
     frequency: "3 months",
     geography: "North America",
-    tags: ["biofuel", "biogas"],
+    keywords: ["biofuel", "biogas"],
   },
   {
     title: "Dataset Long Title Irena Renewable Energy Statistics Lorem Ipsum do max 80 chars",
+    id: 4,
     img: "tempDataSetImage1.jpg",
     description:
       "Dataset Description Detailed statistics on renewable energy capacity, power generation and renewable energy balances. Lorem ipsum dolor sit amet, consectet adipiscing elit sed max 190 chars.",
     lastUpdate: "01-06-2022",
     frequency: "3 months",
     geography: "North America",
-    tags: ["biofuel", "biogas", "biogas"],
+    keywords: ["biofuel", "biogas", "biogas"],
   },
   {
     title: "Dataset Long Title Irena Renewable Energy Statistics Lorem Ipsum do max 80 chars",
+    id: 5,
     img: "tempDataSetImage2.jpg",
     description:
       "Dataset Description Detailed statistics on renewable energy capacity, power generation and renewable energy balances. Lorem ipsum dolor sit amet, consectet adipiscing elit sed max 190 chars.",
     lastUpdate: "01-06-2022",
     frequency: "3 months",
     geography: "North America",
-    tags: [
+    keywords: [
       "biofuel",
       "biogas",
       "biogas",
@@ -73,13 +78,14 @@ export const dataSets = [
   },
   {
     title: "Dataset Long Title Irena Renewable Energy Statistics Lorem Ipsum do max 80 chars",
+    id: 6,
     img: "tempDataSetImage3.jpg",
     description:
       "Dataset Description Detailed statistics on renewable energy capacity, power generation and renewable energy balances. Lorem ipsum dolor sit amet, consectet adipiscing elit sed max 190 chars.",
     lastUpdate: "01-06-2022",
     frequency: "3 months",
     geography: "North America",
-    tags: [
+    keywords: [
       "biofuel",
       "biogas",
       "biogas",
@@ -94,33 +100,36 @@ export const dataSets = [
   },
   {
     title: "Figshare – River Plastic Emissions to the World’s Oceans ",
+    id: 7,
     img: "tempDataSetImage3.jpg",
     description:
       "Dataset Description Detailed statistics on renewable energy capacity, power generation and renewable energy balances. Lorem ipsum dolor sit amet, consectet adipiscing elit sed max 190 chars.",
     lastUpdate: "01-06-2022",
     frequency: "3 months",
     geography: "North America",
-    tags: ["biofuel", "biogas"],
+    keywords: ["biofuel", "biogas"],
   },
   {
     title: "Dataset Long Title Irena Renewable Energy Statistics Lorem Ipsum do max 80 chars",
+    id: 8,
     img: "tempDataSetImage1.jpg",
     description:
       "Dataset Description Detailed statistics on renewable energy capacity, power generation and renewable energy balances. Lorem ipsum dolor sit amet, consectet adipiscing elit sed max 190 chars.",
     lastUpdate: "01-06-2022",
     frequency: "3 months",
     geography: "North America",
-    tags: ["biofuel", "biogas", "biogas"],
+    keywords: ["biofuel", "biogas", "biogas"],
   },
   {
     title: "Dataset Long Title Irena Renewable Energy Statistics Lorem Ipsum do max 80 chars",
+    id: 9,
     img: "tempDataSetImage2.jpg",
     description:
       "Dataset Description Detailed statistics on renewable energy capacity, power generation and renewable energy balances. Lorem ipsum dolor sit amet, consectet adipiscing elit sed max 190 chars.",
     lastUpdate: "01-06-2022",
     frequency: "3 months",
     geography: "North America",
-    tags: [
+    keywords: [
       "biofuel",
       "biogas",
       "biogas",
@@ -135,13 +144,14 @@ export const dataSets = [
   },
   {
     title: "Dataset Long Title Irena Renewable Energy Statistics Lorem Ipsum do max 80 chars",
+    id: 10,
     img: "tempDataSetImage3.jpg",
     description:
       "Dataset Description Detailed statistics on renewable energy capacity, power generation and renewable energy balances. Lorem ipsum dolor sit amet, consectet adipiscing elit sed max 190 chars.",
     lastUpdate: "01-06-2022",
     frequency: "3 months",
     geography: "North America",
-    tags: [
+    keywords: [
       "biofuel",
       "biogas",
       "biogas",

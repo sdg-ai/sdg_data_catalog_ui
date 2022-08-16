@@ -1,21 +1,21 @@
-const UpdateTags = () => {
+const UpdateTags = ({ lastUpdate, updateFrequency, nextUpdate, geographicCoverage }) => {
   return (
     <section className="updateTags">
       <div>
         <h5>Last Update</h5>
-        <p>01-06-2022</p>
+        <p>{lastUpdate}</p>
       </div>
       <div>
         <h5>Next Update</h5>
-        <p>01-06-2022</p>
+        <p>{nextUpdate}</p>
       </div>
       <div>
         <h5>Frequency</h5>
-        <p>3 Months</p>
+        <p>{updateFrequency}</p>
       </div>
       <div>
         <h5>Geography</h5>
-        <p>North America</p>
+        <p>{geographicCoverage}</p>
       </div>
     </section>
   );

@@ -1,8 +1,11 @@
 import { useState } from "react";
 
 //Components
-import Navbar from "../Components/Nav&Footer/Navbar";
-import SearchResultsContainer from "../Components/SearchResultsComponents/SearchResultsContainer";
+import Navbar from "../Components/NavFooter/Navbar";
+import SearchResultsContainer from "../Components/SearchResultsPageComponents/SearchResultsContainer";
+
+//Meta Wrapper
+import Meta from "../Components/MetaWrapper";
 
 //TEMPORARY DATA
 import { dataSets } from "../utils/tempDataArray";
@@ -10,6 +13,7 @@ import { dataSets } from "../utils/tempDataArray";
 const SearchResultsPage = () => {
   return (
     <div className="searchResultsPage">
+      <Meta title="Search Results || SDG Data Catalog" />
       <Navbar />
       <main>
         <SearchResultsContainer />

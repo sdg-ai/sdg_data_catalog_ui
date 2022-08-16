@@ -3,7 +3,7 @@
   top: 9%;
   right: 15%;
   margin-top: 1rem;
-  background-color: $color-white;
+  background-color: $white;
   width: 50rem;
   padding: 1.5rem;
   border-radius: 16px;
@@ -22,15 +22,15 @@
 
 
   &__container {
-    @include flexCenter;
+    @extend %flexCenter;
     width: 100%;
-    background-color: rgba($primary-dark-grey, 0.05);
-    border-radius: 8px;
+    background-color: rgba($dark-grey, 0.05);
+    border-radius: $border-radius;
     border: 1px solid #ddd;
     // padding: 1rem 0;
 
     & i {
-      color: rgba($primary-dark-grey, 0.8);
+      color: rgba($dark-grey, 0.8);
 
     }
 
@@ -44,14 +44,14 @@
         height: 100%;
         width: 90%;
         padding: 1.5rem 0 1.5rem  1rem;
-        background-color: rgba($primary-dark-grey, 0.01);
-        caret-color: $primary-green;
+        background-color: rgba($dark-grey, 0.01);
+        caret-color: $green;
         font-size: 1.6rem;
         
         
         
         &::placeholder {
-          color: $primary-dark-grey;
+          color: $dark-grey;
           font-size: 1.6rem;
           font-weight: 300;
         }
@@ -60,13 +60,17 @@
   }
 
   &__resultsContainer {
-    @include flexStart;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: column;
     margin: 0 2rem;    
     
     & section {
       width: 100%;
-      @include flexStartCenter;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
       padding: 2rem 0;
       color: #000;
       border-bottom: 2px dotted rgba(#ddd, $alpha: 1.0);
@@ -75,7 +79,7 @@
         transition: all .2s;
         
         &:hover {
-          color: $primary-green;
+          color: $green;
           cursor: pointer;
         }
 
@@ -89,23 +93,25 @@
       width: 5rem;
       height: 5rem;
       object-fit: cover;
-      border-radius: 8px;
+      border-radius: $border-radius;
       margin-right: 2rem;
     }
   }
 
 
   &__footer {
-    color: $primary-green;
+    color: $green;
     width: 100%;
-    @include flexCenter;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 2rem 0;
 
     & p {      
       transition: all .2s;
       &:hover {
         cursor: pointer;
-        color: $primary-green-dark;
+        color: $dark-green;
       }
     }    
   }

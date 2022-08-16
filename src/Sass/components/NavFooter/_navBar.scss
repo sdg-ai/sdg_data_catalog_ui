@@ -1,0 +1,106 @@
+.navBar {
+  width: 100vw;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background-color: $white;
+  border-bottom: 1px dotted $dark-grey;
+
+  &--transparent{
+    background: none;
+    border-bottom: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  
+  &__titleContainer{
+    @extend %flexCenter;
+    margin-left: 10%;
+
+    @include query(max-w-1000){
+      margin-left: 5%;
+    }
+    @include query(max-w-850){
+      justify-content: flex-start;
+      margin-left: 5%;
+      
+    }   
+  }
+
+  &__logoContainer {
+    width: 35px;
+    height: 48px;
+    margin-right: 10px;
+  }
+
+  &__logo {
+    width: 100%;
+    height: auto;
+  }
+
+  &__title{
+    line-height: 2rem;
+
+    &--bold {
+      font-weight: 900;
+    }
+
+    & p{
+      font-size: 2rem;
+    }
+
+    &--transparent {
+      color: $white
+    }
+  }
+
+  &__menuContainer{
+    @extend %flexCenter;
+    margin-right: 15%;
+
+    @include query(max-w-850){
+      margin-right: 5%;
+    }
+
+    @include query(max-w-600){
+      display: none;
+    }
+
+    & li {
+      margin: 0 1.7rem 0 1.7rem
+    }
+  }
+
+  &__searchIcon {
+    margin-left: 1.7rem;
+    font-size: 2rem;
+  }
+
+
+  &__menu {
+    display: none;
+    padding-right: 2rem;
+    
+    @include query(max-w-600){
+      display: inline;
+    }
+    
+    & i{
+      color: $white;
+      font-size: 4rem;
+      transition: all .3s;
+
+      &:hover{
+        color: $green;
+        cursor: pointer;
+      }
+
+    }
+
+  }
+
+}

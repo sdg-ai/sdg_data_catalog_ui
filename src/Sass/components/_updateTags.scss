@@ -5,11 +5,13 @@
 
   & div {
     width: 15rem;
-    @include flexStart;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: column;
     padding: 1rem 1rem 1rem 1rem; 
-    background-color: $primary-grey;
-    border-radius: 8px;
+    background-color: $grey;
+    border-radius: $border-radius;
     
     & h5, p {
       font-size: 1.4rem

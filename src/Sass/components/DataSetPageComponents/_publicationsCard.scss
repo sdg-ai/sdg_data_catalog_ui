@@ -1,0 +1,88 @@
+.publicationsCard {
+  @extend %flexStart;
+  flex-direction: column;
+  background-color: $white;
+  border-radius: 16px;
+  box-shadow: 8px 3px 24px rgba(#000,.1);
+  margin: 1rem;
+  width: 360px;
+  min-height: 320px;
+  
+  &__titleContainer {
+    width: 100%;   
+    min-height: 8rem;
+    padding: 2rem 2rem 1rem 2rem;
+
+    & p {
+      font-size: 16px;
+      font-weight: 700;
+    }
+  }
+  
+  
+  &__descriptionContainer {  
+    padding: 0 2rem;
+    min-height: 12rem;
+
+    & p {
+      font-size: 14px;
+    }
+  }
+  
+  &__authorsContainer{
+    width: 100%;  
+    @extend %flexStart;
+    flex-wrap: wrap;
+    color: rgba($dark-grey, .6);
+    padding: 1rem 2rem;
+    height: 6rem;   
+    
+    & p {
+      font-size: 12px;
+    }
+    
+  }
+
+  &__infoBanner {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem 2rem;
+
+    background-color: $grey;
+
+    & div {
+      padding-right: 10rem;
+    }
+
+    
+    & p {
+      font-size: 1.2rem;
+
+      &:first-child{
+        font-weight: 700;
+      }
+    }
+  }
+  
+  
+  &__linkContainer {
+    padding: 2rem 2rem;
+    width: 100%;
+ 
+    min-height: 4rem;
+    
+    & a {
+      color: $green;
+      font-weight: 700;
+      font-size: 16px;
+
+      &:hover {
+        color: $dark-green;
+      }
+    }
+
+  }
+
+}
