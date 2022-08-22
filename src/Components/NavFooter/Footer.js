@@ -44,7 +44,7 @@ const Footer = () => {
           <div className="footer__disclaimer">
             <p>
               The SDG Catalog is an initiative created by the{" "}
-              <a href="https://ai4good.org" target="_black">
+              <a href="https://ai4good.org" target="_blank" rel="noreferrer">
                 AI for Good Foundation
               </a>
               , an IRS 501(c)3 Public Charity (81-1631000).
